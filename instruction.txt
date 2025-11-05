@@ -1,0 +1,12 @@
+Cara menggunakan:
+Warna:
+bg-background-base, bg-primary, bg-secondary
+text-foreground
+Fonts:
+font-figtree atau font-urbanist
+Font weights: font-light, font-normal, font-medium, font-semibold, font-bold, font-extrabold
+Components contoh:
+Button — komponen button dengan variant
+Card — komponen card
+Hero — section hero
+Untuk menjalankan:

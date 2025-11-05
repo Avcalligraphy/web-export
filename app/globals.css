@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-background-base: #05080E;
+  --color-primary: #05080E;
+  --color-secondary: #0E1014;
+  --color-foreground: #ffffff;
+  
+  /* Fonts */
+  --font-family-figtree: 'Figtree', sans-serif;
+  --font-family-urbanist: 'Urbanist', sans-serif;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+}
+
+:root {
+  --background-base: #05080E;
+  --primary: #05080E;
+  --secondary: #0E1014;
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background-base);
+  color: var(--foreground);
+  font-family: var(--font-family-figtree);
+  font-weight: var(--font-weight-normal);
+}
