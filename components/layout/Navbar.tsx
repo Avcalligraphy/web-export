@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Button } from "../ui";
@@ -15,41 +16,50 @@ const menuItems = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
-    <nav className="sticky top-0 z-50 bg-secondary/95 backdrop-blur-sm border-b border-foreground/10 py-6">
+    <nav className="sticky top-0 z-50 py-6 bg-transparent backdrop-blur-2xl">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="relative flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center z-10">
             <span className="text-xl md:text-2xl font-bold text-foreground font-urbanist">
               LOGO
             </span>
           </Link>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-1 px-[25px] py-[22px] bg-primary mr-6 rounded-[100px] border-2 border-[#1F1F1F]">
-            {menuItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={cn(
-                  "px-4 py-2 text-sm font-medium text-foreground/80",
-                  "hover:text-foreground hover:bg-primary/20",
-                  "rounded-lg transition-all duration-200",
-                  "font-figtree"
-                )}
-              >
-                {item.label}
-              </Link>
-            ))}
+          {/* Desktop Menu - Centered */}
+          <div className="hidden md:flex items-center justify-center absolute left-1/2 -translate-x-1/2 z-10">
+            <div className="flex items-center space-x-1 px-[25px] py-3 bg-primary rounded-[100px] border-2 border-gray-100">
+              {menuItems.map((item) => {
+                const isActive = pathname === item.href;
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={cn(
+                      "text-sm font-regular text-foreground/80",
+                      "transition-all duration-200",
+                      "font-urbanist",
+                      isActive
+                        ? "py-3 px-7.5 border border-gray-200 bg-secondary rounded-4xl text-foreground"
+                        : "px-4 py-2 hover:text-foreground hover:bg-primary/20 rounded-lg"
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
 
-          <div className="px-4 mt-2">
-              <Button variant="primary" size="md" className="w-full rounded-[100px] border-[1px] border-[#1A1A1A]">
-                Contact Us
-              </Button>
-            </div>
+          {/* Contact Button */}
+          <div className="px-4 mt-2 z-10">
+            <Button variant="primary" size="md" className="w-[160px] rounded-[20px]">
+              Contact Us
+            </Button>
+          </div>
 
           {/* Mobile Menu Button */}
           <button

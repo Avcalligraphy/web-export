@@ -15,6 +15,13 @@ const config: Config = {
         primary: "#05080E",
         secondary: "#0E1014",
         foreground: "#ffffff",
+        gray: {
+          100: "#1F1F1F",
+          200: "#262626",
+        },
+        red: {
+          100: "#E50000",
+        },
       },
       fontFamily: {
         figtree: ["var(--font-figtree)", "sans-serif"],

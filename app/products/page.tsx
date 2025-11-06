@@ -5,7 +5,7 @@ export default function ProductsPage() {
         <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-urbanist">
           Products
         </h1>
-        <p className="text-lg text-foreground/80 font-figtree">
+        <p className="text-lg text-foreground/80 font-urbanist">
           Explore our product offerings
         </p>
       </div>

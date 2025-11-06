@@ -5,7 +5,7 @@ export default function ExportShippingPage() {
         <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-urbanist">
           Export Shipping
         </h1>
-        <p className="text-lg text-foreground/80 font-figtree">
+        <p className="text-lg text-foreground/80 font-urbanist">
           Global shipping and export services
         </p>
       </div>

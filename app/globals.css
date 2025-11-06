@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -6,10 +7,9 @@
   --color-primary: #05080E;
   --color-secondary: #0E1014;
   --color-foreground: #ffffff;
-  
-  /* Fonts */
-  --font-family-figtree: 'Figtree', sans-serif;
-  --font-family-urbanist: 'Urbanist', sans-serif;
+  --color-gray-100: #1F1F1F;
+  --color-red-100: #E50000;
+  --color-gray-200: #262626;
   
   /* Font Weights */
   --font-weight-light: 300;
@@ -30,6 +30,6 @@
 body {
   background: var(--background-base);
   color: var(--foreground);
-  font-family: var(--font-family-figtree);
+  font-family: var(--font-urbanist);
   font-weight: var(--font-weight-normal);
 }
