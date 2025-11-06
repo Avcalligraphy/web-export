@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { Button } from "../ui";
 
 const menuItems = [
   { label: "Home", href: "/" },
@@ -16,7 +17,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-secondary/95 backdrop-blur-sm border-b border-foreground/10">
+    <nav className="sticky top-0 z-50 bg-secondary/95 backdrop-blur-sm border-b border-foreground/10 py-6">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -27,7 +28,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-1 px-[25px] py-[22px] bg-primary mr-6 rounded-[100px] border-2 border-[#1F1F1F]">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
@@ -43,6 +44,12 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
+
+          <div className="px-4 mt-2">
+              <Button variant="primary" size="md" className="w-full rounded-[100px] border-[1px] border-[#1A1A1A]">
+                Contact Us
+              </Button>
+            </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -86,6 +93,7 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
+
           </div>
         )}
       </div>
