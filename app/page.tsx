@@ -1,6 +1,6 @@
-import Features from "@/components/sections/Features";
-import Hero from "@/components/sections/Hero";
-import OurStory from "@/components/sections/OurStory";
+import { Hero, Features, OurStory, Product } from "@/components/sections";
+
+
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <Hero />
       <Features />
       <OurStory />
+      <Product />
     </main>
   );
 }

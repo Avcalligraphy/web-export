@@ -1,5 +1,5 @@
 import React from 'react'
-import FeaturesContainer from '../ui/FeaturesContainer'
+import FeaturesContainer from '../../ui/FeaturesContainer'
 
 export default function Features() {
   return (
