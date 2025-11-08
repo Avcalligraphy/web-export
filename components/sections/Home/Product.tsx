@@ -5,7 +5,7 @@ export default function Product() {
   return (
     <section className="container mx-auto border-1 border-gray-200 rounded-xl p-10 mt-30">
       <div>
-        <h2 className="text-3xl font-bold text-foreground font-urbanist">Export-Grade Coconut Charcoal Briquettes</h2>
+        <h2 className="text-4xl font-bold text-foreground font-urbanist">Export-Grade Coconut Charcoal Briquettes</h2>
         <p className="text-lg text-foreground/50 font-urbanist font-regular mt-3.5">
         Delivering long-lasting heat, low ash, and clean performance — perfect for shisha, BBQ, and private label brands.
         </p>
