@@ -8,4 +8,4 @@ export { default as Tag } from "./Tag";
 export { default as FeaturesContainer } from "./FeaturesContainer";
 export { default as StoryCard } from "./StoryCard";
 export { default as ContainerClientSays } from "./ContainerClientSays";
-
+export { default as ContainerCertificates } from "./ContainerCertificates";

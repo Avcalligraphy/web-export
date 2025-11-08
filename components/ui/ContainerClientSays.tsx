@@ -15,7 +15,7 @@ export default function ContainerClientSays({ stars, name, title, description, i
     <div className="flex flex-col h-full border-1 border-gray-200 rounded-xl p-12.5 bg-secondary">
         <div className="flex items-center gap-2.5">
             {Array.from({ length: stars }, (_, index) => (
-                <img src="/assets/icons/ic_stars-2.png" alt="stars-2" className="w-10 h-10" />
+                <img src="/assets/icons/ic_stars-2.png" key={index} alt="stars-2" className="w-10 h-10" />
             ))}
         </div>
         <h3 className="text-2xl font-semibold text-foreground font-urbanist mt-10">{title}</h3>

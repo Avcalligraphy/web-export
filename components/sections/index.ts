@@ -3,3 +3,4 @@ export { default as Features } from "./Home/Features";
 export { default as OurStory } from "./Home/OurStory";
 export { default as Product } from "./Home/Product";
 export { default as ClientSays } from "./Home/ClientSays";
+export { default as Certificates } from "./Home/Certificates";
