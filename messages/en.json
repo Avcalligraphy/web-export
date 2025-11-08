@@ -1,0 +1,116 @@
+{
+
+  "--------------------------------- HOME PAGE ---------------------------------":"",
+  "common": {
+    "logo": "LOGO",
+    "contactUs": "Contact Us",
+    "downloadCatalog": "Download Catalog",
+    "getQuote": "Get a Quote",
+    "requestQuote": "Request a Quote",
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "factorQuality": "Factor & Quality",
+    "exportShipping": "Export Shipping"
+  },
+  "hero": {
+    "title": "Premium Coconut Charcoal Briquettes for Hookah & BBQ — Exported Worldwide",
+    "description": "We are a leading manufacturer and exporter of premium coconut charcoal briquettes for hookah and BBQ. Our products are exported worldwide to meet the growing demand for high-quality charcoal in international markets."
+  },
+  "features": {
+    "title": "Why Choose Our Premium Coconut Charcoal Briquettes",
+    "description": "Discover the key features that make our coconut charcoal briquettes the preferred choice for hookah and BBQ enthusiasts worldwide.",
+    "items": {
+      "natural": "100% Natural Coconut Shell",
+      "burningTime": "Long Burning Time (3+ Hours)",
+      "lowAsh": "Low Ash Content (<2%)",
+      "certified": "SGS & ISO Certified",
+      "oem": "OEM / Private Label Available"
+    }
+  },
+  "ourStory": {
+    "title": "Our Story",
+    "description": "Our journey began with a simple mission — to transform natural resources into sustainable energy solutions for the world. From a humble local operation, we've grown into a trusted global exporter of premium coconut charcoal briquettes, built on quality, integrity, and innovation.",
+    "trust": {
+      "title": "Trust",
+      "description": "Trust is the foundation of every partnership we build. From our production process to every shipment we deliver, transparency and reliability guide everything we do."
+    },
+    "excellence": {
+      "title": "Excellence",
+      "description": "We strive for excellence in every detail — from sourcing high-quality coconut shells to maintaining international export standards. Our briquettes are crafted with precision to ensure consistent performance and premium quality."
+    },
+    "sustainability": {
+      "title": "Sustainability",
+      "description": "Sustainability is at the heart of our business. We're committed to eco-friendly production practices that reduce waste, conserve energy, and support local communities."
+    },
+    "commitment": {
+      "title": "Our Commitment",
+      "description": "We are dedicated to providing exceptional products and services to our partners around the world. Our goal is simple: to deliver energy that fuels industries while protecting the planet we all share."
+    }
+  },
+  "product": {
+    "title": "Export-Grade Coconut Charcoal Briquettes",
+    "description": "Delivering long-lasting heat, low ash, and clean performance — perfect for shisha, BBQ, and private label brands.",
+    "hookah": {
+      "title": "Hookah / Shisha Briquettes",
+      "description": "Long-lasting heat, low ash, and clean taste for smooth shisha sessions.",
+      "tag": "Hookah",
+      "moq": "MOQ 1×20ft | Custom branding available"
+    },
+    "bbq": {
+      "title": "Eco-Friendly Charcoal for BBQ",
+      "description": "Even heat, long burn, and pure coconut shell composition — perfect for grilling.",
+      "tag": "BBQ",
+      "moq": "MOQ 1×20ft | 5–10 kg packaging"
+    },
+    "oem": {
+      "title": "Custom Charcoal Shapes & Packaging",
+      "description": "Create your own design and packaging with full OEM support.",
+      "tag": "OEM / Private Label",
+      "moq": "Flexible MOQ | Kraft & printed box option"
+    }
+  },
+  "clientSays": {
+    "title": "Client Says",
+    "description": "Hear from our satisfied importers and distributors who trust our coconut charcoal for consistent quality and reliable export service.",
+    "client1": {
+      "name": "Ahmed Al-Farouq",
+      "title": "Reliable Supplier, Excellent Packaging",
+      "description": "Our orders always arrive on time and in perfect condition. The briquettes burn evenly and last long — perfect for our market.",
+      "image": "/assets/images/client-says-1.png",
+      "country": "Riyadh, Saudi Arabia"
+    },
+    "client2": {
+      "name": "Igor Petrov",
+      "title": "Top Quality and Great Support",
+      "description": "We’ve tested many suppliers, but this company stands out for both product quality and responsive communication",
+      "image": "/assets/images/client-says-1.png",
+      "country": "Moscow, Russia"
+    },
+    "client3": {
+      "name": "Nguyen Thi Kim Anh",
+      "title": "Consistent Quality, Trusted Partner",
+      "description": "We’ve been importing from them for over two years now. The consistency and professionalism are unmatched",
+      "image": "/assets/images/client-says-1.png",
+      "country": "Ho Chi Minh City, Vietnam"
+    }
+  },
+  "certificates": {
+    "tag": "Quality You Can Trust",
+    "title": "Certificates & Tests",
+    "description": "Our products are rigorously tested and certified by international laboratories to ensure consistency, safety, and export-grade quality for every shipment:"
+  },
+  "footer": {
+    "description": "Leading manufacturer and exporter of premium coconut charcoal briquettes for hookah and BBQ. Exported worldwide to meet the growing demand for high-quality charcoal.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "certifications": "Certifications",
+    "email": "info@company.com",
+    "phone": "+62 123 456 7890",
+    "location": "Indonesia",
+    "copyright": "© {year} Company Name. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}
+

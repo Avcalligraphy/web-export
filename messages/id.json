@@ -1,0 +1,114 @@
+{
+  "common": {
+    "logo": "LOGO",
+    "contactUs": "Hubungi Kami",
+    "downloadCatalog": "Unduh Katalog",
+    "getQuote": "Dapatkan Penawaran",
+    "requestQuote": "Minta Penawaran",
+    "home": "Beranda",
+    "about": "Tentang",
+    "products": "Produk",
+    "factorQuality": "Faktor & Kualitas",
+    "exportShipping": "Ekspor & Pengiriman"
+  },
+  "hero": {
+    "title": "Briket Arang Kelapa Premium untuk Hookah & BBQ — Diekspor ke Seluruh Dunia",
+    "description": "Kami adalah produsen dan eksportir terkemuka briket arang kelapa premium untuk hookah dan BBQ. Produk kami diekspor ke seluruh dunia untuk memenuhi permintaan arang berkualitas tinggi di pasar internasional."
+  },
+  "features": {
+    "title": "Mengapa Memilih Briket Arang Kelapa Premium Kami",
+    "description": "Temukan fitur utama yang menjadikan briket arang kelapa kami pilihan utama bagi penggemar hookah dan BBQ di seluruh dunia.",
+    "items": {
+      "natural": "100% Tempurung Kelapa Alami",
+      "burningTime": "Waktu Bakar Lama (3+ Jam)",
+      "lowAsh": "Kandungan Abu Rendah (<2%)",
+      "certified": "Bersertifikat SGS & ISO",
+      "oem": "OEM / Private Label Tersedia"
+    }
+  },
+  "ourStory": {
+    "title": "Cerita Kami",
+    "description": "Perjalanan kami dimulai dengan misi sederhana — mengubah sumber daya alam menjadi solusi energi berkelanjutan untuk dunia. Dari operasi lokal yang sederhana, kami telah berkembang menjadi eksportir global terpercaya briket arang kelapa premium, dibangun dengan kualitas, integritas, dan inovasi.",
+    "trust": {
+      "title": "Kepercayaan",
+      "description": "Kepercayaan adalah fondasi setiap kemitraan yang kami bangun. Dari proses produksi hingga setiap pengiriman yang kami kirim, transparansi dan keandalan memandu semua yang kami lakukan."
+    },
+    "excellence": {
+      "title": "Keunggulan",
+      "description": "Kami berusaha untuk keunggulan dalam setiap detail — dari sumber tempurung kelapa berkualitas tinggi hingga mempertahankan standar ekspor internasional. Briket kami dibuat dengan presisi untuk memastikan kinerja konsisten dan kualitas premium."
+    },
+    "sustainability": {
+      "title": "Keberlanjutan",
+      "description": "Keberlanjutan adalah inti dari bisnis kami. Kami berkomitmen pada praktik produksi ramah lingkungan yang mengurangi limbah, menghemat energi, dan mendukung komunitas lokal."
+    },
+    "commitment": {
+      "title": "Komitmen Kami",
+      "description": "Kami berdedikasi untuk menyediakan produk dan layanan yang luar biasa kepada mitra kami di seluruh dunia. Tujuan kami sederhana: memberikan energi yang menggerakkan industri sambil melindungi planet yang kita semua bagikan."
+    }
+  },
+  "product": {
+    "title": "Briket Arang Kelapa Kelas Ekspor",
+    "description": "Memberikan panas tahan lama, abu rendah, dan performa bersih — sempurna untuk shisha, BBQ, dan merek private label.",
+    "hookah": {
+      "title": "Briket Hookah / Shisha",
+      "description": "Panas tahan lama, abu rendah, dan rasa bersih untuk sesi shisha yang mulus.",
+      "tag": "Hookah",
+      "moq": "MOQ 1×20ft | Branding kustom tersedia"
+    },
+    "bbq": {
+      "title": "Arang Ramah Lingkungan untuk BBQ",
+      "description": "Panas merata, bakar lama, dan komposisi tempurung kelapa murni — sempurna untuk memanggang.",
+      "tag": "BBQ",
+      "moq": "MOQ 1×20ft | Kemasan 5–10 kg"
+    },
+    "oem": {
+      "title": "Bentuk & Kemasan Arang Kustom",
+      "description": "Buat desain dan kemasan Anda sendiri dengan dukungan OEM penuh.",
+      "tag": "OEM / Private Label",
+      "moq": "MOQ Fleksibel | Opsi kotak Kraft & cetak"
+    }
+  },
+  "clientSays": {
+    "title": "Kata Klien",
+    "description": "Dengarkan dari importir dan distributor kami yang puas yang mempercayai arang kelapa kami untuk kualitas konsisten dan layanan ekspor yang andal.",
+    "client1": {
+      "name": "Ahmed Al-Farouq",
+      "title": "Supplier Terpercaya, Kemasan yang Bagus",
+      "description": "Pesanan kami selalu sampai tepat waktu dan dalam kondisi sempurna. Briket arang kelapa berkarbonasi merata dan bertahan lama — sempurna untuk pasar kami.",
+      "image": "/assets/images/client-says-1.png",
+      "country": "Riyadh, Saudi Arabia"
+    },
+    "client2": {
+      "name": "Igor Petrov",
+      "title": "Kualitas Tinggi dan Dukungan yang Bagus",
+      "description": "Kami telah menguji banyak supplier, tetapi perusahaan ini menonjol karena kualitas produk dan komunikasi yang responsif",
+      "image": "/assets/images/client-says-1.png",
+      "country": "Moscow, Russia"
+    },
+    "client3": {
+      "name": "Nguyen Thi Kim Anh",
+      "title": "Kualitas Konsisten, Mitra Terpercaya",
+      "description": "Kami telah mengimpor dari mereka selama lebih dari dua tahun sekarang. Konsistensi dan profesionalisme tidak terlampaui",
+      "image": "/assets/images/client-says-1.png",
+      "country": "Ho Chi Minh City, Vietnam"
+    }
+  },
+  "certificates": {
+    "tag": "Kualitas yang Bisa Anda Percaya",
+    "title": "Sertifikat & Uji",
+    "description": "Produk kami diuji dan disertifikasi secara ketat oleh laboratorium internasional untuk memastikan konsistensi, keamanan, dan kualitas kelas ekspor untuk setiap pengiriman:"
+  },
+  "footer": {
+    "description": "Produsen dan eksportir terkemuka briket arang kelapa premium untuk hookah dan BBQ. Diekspor ke seluruh dunia untuk memenuhi permintaan arang berkualitas tinggi.",
+    "quickLinks": "Tautan Cepat",
+    "contactUs": "Hubungi Kami",
+    "certifications": "Sertifikasi",
+    "email": "info@company.com",
+    "phone": "+62 123 456 7890",
+    "location": "Indonesia",
+    "copyright": "© {year} Nama Perusahaan. Hak cipta dilindungi.",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsOfService": "Syarat Layanan"
+  }
+}
+

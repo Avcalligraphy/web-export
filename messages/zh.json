@@ -1,0 +1,114 @@
+{
+  "common": {
+    "logo": "标志",
+    "contactUs": "联系我们",
+    "downloadCatalog": "下载目录",
+    "getQuote": "获取报价",
+    "requestQuote": "请求报价",
+    "home": "首页",
+    "about": "关于我们",
+    "products": "产品",
+    "factorQuality": "因素与质量",
+    "exportShipping": "出口运输"
+  },
+  "hero": {
+    "title": "优质椰壳炭砖用于水烟和烧烤 — 全球出口",
+    "description": "我们是优质椰壳炭砖的领先制造商和出口商，用于水烟和烧烤。我们的产品出口到世界各地，以满足国际市场对高质量木炭日益增长的需求。"
+  },
+  "features": {
+    "title": "为什么选择我们的优质椰壳炭砖",
+    "description": "发现使我们的椰壳炭砖成为全球水烟和烧烤爱好者首选的关键特性。",
+    "items": {
+      "natural": "100% 天然椰壳",
+      "burningTime": "燃烧时间长（3小时以上）",
+      "lowAsh": "灰分含量低（<2%）",
+      "certified": "SGS 和 ISO 认证",
+      "oem": "OEM / 私人标签可用"
+    }
+  },
+  "ourStory": {
+    "title": "我们的故事",
+    "description": "我们的旅程始于一个简单的使命——将自然资源转化为世界的可持续能源解决方案。从一个不起眼的本地运营，我们已经发展成为值得信赖的全球优质椰壳炭砖出口商，建立在质量、诚信和创新的基础上。",
+    "trust": {
+      "title": "信任",
+      "description": "信任是我们建立的每个合作伙伴关系的基础。从我们的生产过程到我们交付的每批货物，透明度和可靠性指导着我们所做的一切。"
+    },
+    "excellence": {
+      "title": "卓越",
+      "description": "我们力求在每个细节上追求卓越——从采购优质椰壳到维护国际出口标准。我们的炭砖经过精心制作，以确保一致的性能和优质的质量。"
+    },
+    "sustainability": {
+      "title": "可持续性",
+      "description": "可持续性是我们业务的核心。我们致力于环保的生产实践，减少浪费，节约能源，并支持当地社区。"
+    },
+    "commitment": {
+      "title": "我们的承诺",
+      "description": "我们致力于为世界各地的合作伙伴提供卓越的产品和服务。我们的目标很简单：提供为工业提供动力的能源，同时保护我们共同分享的地球。"
+    }
+  },
+  "product": {
+    "title": "出口级椰壳炭砖",
+    "description": "提供持久的热量、低灰分和清洁性能 — 非常适合水烟、烧烤和私人标签品牌。",
+    "hookah": {
+      "title": "水烟 / 什沙炭砖",
+      "description": "持久的热量、低灰分和清洁的味道，带来顺畅的水烟体验。",
+      "tag": "水烟",
+      "moq": "最小订购量 1×20ft | 可定制品牌"
+    },
+    "bbq": {
+      "title": "环保烧烤炭",
+      "description": "均匀的热量、长时间燃烧和纯椰壳成分 — 非常适合烧烤。",
+      "tag": "烧烤",
+      "moq": "最小订购量 1×20ft | 5–10 公斤包装"
+    },
+    "oem": {
+      "title": "定制炭形状和包装",
+      "description": "通过完整的 OEM 支持创建您自己的设计和包装。",
+      "tag": "OEM / 私人标签",
+      "moq": "灵活的最小订购量 | 牛皮纸和印刷盒选项"
+    }
+  },
+  "clientSays": {
+    "title": "客户评价",
+    "description": "听取我们满意的进口商和分销商的意见，他们信任我们的椰壳炭，以获得一致的质量和可靠的出口服务。",
+    "client1": {
+      "name": "Ahmed Al-Farouq",
+      "title": "可靠供应商，优秀包装",
+      "description": "我们的订单总是按时到达，并且完美无缺。 Briquettes 均匀燃烧并长时间燃烧 — 非常适合我们的市场。",
+      "image": "/assets/images/client-says-1.png",
+      "country": "Riyadh, Saudi Arabia"
+    },
+    "client2": {
+      "name": "Igor Petrov",
+      "title": "高质量和优秀支持",
+      "description": "我们测试了许多供应商，但这家公司脱颖而出，因为产品质量和响应性沟通",
+      "image": "/assets/images/client-says-1.png",
+      "country": "Moscow, Russia"
+    },
+    "client3": {
+      "name": "Nguyen Thi Kim Anh",
+      "title": "一致质量，可信赖合作伙伴",
+      "description": "我们与他们合作已超过两年。一致性和专业精神无与伦比",
+      "image": "/assets/images/client-says-1.png",
+      "country": "Ho Chi Minh City, Vietnam"
+    }
+  },
+  "certificates": {
+    "tag": "值得信赖的质量",
+    "title": "证书和测试",
+    "description": "我们的产品经过国际实验室的严格测试和认证，以确保每批货物的一致性、安全性和出口级质量："
+  },
+  "footer": {
+    "description": "优质椰壳炭砖的领先制造商和出口商，用于水烟和烧烤。出口到世界各地，以满足对高质量木炭日益增长的需求。",
+    "quickLinks": "快速链接",
+    "contactUs": "联系我们",
+    "certifications": "认证",
+    "email": "info@company.com",
+    "phone": "+62 123 456 7890",
+    "location": "印度尼西亚",
+    "copyright": "© {year} 公司名称。保留所有权利。",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款"
+  }
+}
+

@@ -1,17 +1,20 @@
 import { ContainerCertificates, Tag } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
 
 export default function Certificates() {
+  const t = useTranslations('certificates');
+
   return (
     <section className=" mt-30 bg-secondary border-1 border-gray-200">
       <div className="container mx-auto py-20">
       <div className="flex items-center gap-15">
         <img src="/assets/icons/certif.png" alt="certif" className="w-auto h-30 mb-4" />
       <div>
-        <Tag>Quality You Can Trust</Tag>
-        <h2 className="text-4xl font-bold text-foreground font-urbanist mt-3.5">Certificates & Tests</h2>
+        <Tag>{t('tag')}</Tag>
+        <h2 className="text-4xl font-bold text-foreground font-urbanist mt-3.5">{t('title')}</h2>
         <p className="text-lg text-foreground/50 font-urbanist font-regular mt-3.5">
-        Our products are rigorously tested and certified by international laboratories to ensure consistency, safety, and export-grade quality for every shipment:
+        {t('description')}
         </p>
 
       </div>

@@ -1,31 +1,51 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Button } from "../ui";
-
-const menuItems = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Products", href: "/products" },
-  { label: "Factor & Quality", href: "/factor-quality" },
-  { label: "Export Shipping", href: "/export-shipping" },
-];
+import LanguageSwitcher from "../ui/LanguageSwitcher";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const locale = useLocale();
+  const t = useTranslations('common');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const menuItems = [
+    { label: t('home'), href: `/${locale}` },
+    { label: t('about'), href: `/${locale}/about` },
+    { label: t('products'), href: `/${locale}/products` },
+    { label: t('factorQuality'), href: `/${locale}/factor-quality` },
+    { label: t('exportShipping'), href: `/${locale}/export-shipping` },
+  ];
 
   return (
-    <nav className="sticky top-0 z-50 py-6 bg-transparent backdrop-blur-2xl">
+    <nav className={cn(
+      "sticky top-0 z-50 py-6 transition-all duration-300",
+      isScrolled 
+        ? "bg-primary/80 backdrop-blur-2xl" 
+        : "bg-transparent"
+    )}>
       <div className="container mx-auto px-4">
         <div className="relative flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center z-10">
+          <Link href={`/${locale}`} className="flex items-center z-10">
             <span className="text-xl md:text-2xl font-bold text-foreground font-urbanist">
-              LOGO
+              {t('logo')}
             </span>
           </Link>
 
@@ -33,7 +53,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center justify-center absolute left-1/2 -translate-x-1/2 z-10">
             <div className="flex items-center space-x-1 px-[25px] py-3 bg-primary rounded-[100px] border-2 border-gray-100">
               {menuItems.map((item) => {
-                const isActive = pathname === item.href;
+                const isActive = pathname === item.href || pathname.startsWith(item.href + '/');
                 return (
                   <Link
                     key={item.href}
@@ -54,10 +74,11 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Contact Button */}
-          <div className="px-4 mt-2 z-10">
+          {/* Right Side - Language Switcher & Contact Button */}
+          <div className="flex items-center gap-4 px-4 mt-2 z-10">
+            <LanguageSwitcher />
             <Button variant="primary" size="md" className="w-[160px] rounded-[20px]">
-              Contact Us
+              {t('contactUs')}
             </Button>
           </div>
 
@@ -103,7 +124,9 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-
+            <div className="px-4 py-3">
+              <LanguageSwitcher />
+            </div>
           </div>
         )}
       </div>
