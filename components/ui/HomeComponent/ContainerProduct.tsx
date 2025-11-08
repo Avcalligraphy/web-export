@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button, Tag } from ".";
+import { Button, Tag } from "..";
 
 interface ContainerProductProps {
   title: string;

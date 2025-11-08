@@ -9,7 +9,7 @@ export default function Footer() {
     { label: tCommon('home'), href: `/${locale}` },
     { label: tCommon('about'), href: `/${locale}/about` },
     { label: tCommon('products'), href: `/${locale}/products` },
-    { label: tCommon('factorQuality'), href: `/${locale}/factor-quality` },
+    { label: tCommon('factorQuality'), href: `/${locale}/factory-quality` },
     { label: tCommon('exportShipping'), href: `/${locale}/export-shipping` },
   ];
   return (

@@ -9,6 +9,7 @@ import type { Metadata } from "next";
 import messagesId from '@/messages/id.json';
 import messagesEn from '@/messages/en.json';
 import messagesZh from '@/messages/zh.json';
+import messagesAr from '@/messages/ar.json';
 
 // Generate static params for all locales (required for static export)
 export function generateStaticParams() {
@@ -67,6 +68,18 @@ const localeMetadata: Record<string, Metadata> = {
       type: "website",
     },
   },
+  ar: {
+    title: {
+      default: "فحم جوز الهند الفاخر للشيشة والشواء | التصدير إلى جميع أنحاء العالم",
+      template: "%s | تصدير فحم جوز الهند الفاخر"
+    },
+    description: "شركة رائدة في تصنيع وتصدير فحم جوز الهند الفاخر للشيشة والشواء. يتم التصدير إلى جميع أنحاء العالم مع شهادات SGS و Halal و ISO و MSDS و COA. مدة احتراق طويلة، نسبة رماد منخفضة، 100% طبيعي.",
+    keywords: ["فحم جوز الهند", "فحم الشيشة", "فحم الشواء", "فحم صديق للبيئة", "فحم معتمد SGS", "فحم معتمد Halal", "فحم معتمد ISO", "تصدير الفحم", "فحم عالي الجودة"],
+    openGraph: {
+      locale: "ar_SA",
+      type: "website",
+    },
+  },
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -105,6 +118,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             ? "Briket Arang Kelapa Premium untuk Hookah & BBQ"
             : locale === 'zh'
             ? "优质椰壳炭砖用于水烟和烧烤"
+            : locale === 'ar'
+            ? "فحم جوز الهند الفاخر للشيشة والشواء"
             : "Premium Coconut Charcoal Briquettes for Hookah & BBQ",
         },
       ],
@@ -131,7 +146,11 @@ const localeLangMap: Record<string, string> = {
   id: "id",
   en: "en",
   zh: "zh-CN",
+  ar: "ar",
 };
+
+// RTL languages
+const rtlLocales = ['ar'];
 
 export default async function LocaleLayout({
   children,
@@ -151,12 +170,14 @@ export default async function LocaleLayout({
     id: messagesId,
     en: messagesEn,
     zh: messagesZh,
+    ar: messagesAr,
   };
   
   const messages = messagesMap[locale] || messagesId;
+  const isRTL = rtlLocales.includes(locale);
 
   return (
-    <html lang={localeLangMap[locale] || locale}>
+    <html lang={localeLangMap[locale] || locale} dir={isRTL ? 'rtl' : 'ltr'}>
       <body
         className={`${figtree.variable} ${urbanist.variable} antialiased`}
       >

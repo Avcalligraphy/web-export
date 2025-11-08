@@ -10,7 +10,7 @@
     "home": "Home",
     "about": "About",
     "products": "Products",
-    "factorQuality": "Factor & Quality",
+    "factorQuality": "Factory & Quality",
     "exportShipping": "Export Shipping"
   },
   "hero": {
@@ -111,6 +111,76 @@
     "copyright": "© {year} Company Name. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
+  },
+  "about": {
+    "aboutHero": {
+      "title": "Our Journey",
+      "description": "Our story began with a simple mission — to bring Indonesia's finest coconut charcoal briquettes to the world. From humble beginnings, we've grown into a trusted global exporter, known for consistent quality, sustainable production, and long-term partnerships with international buyers.",
+      "stats": {
+        "exportDestinations": "Export Destinations",
+        "satisfiedBuyers": "Satisfied Buyers",
+        "productionCapacity": "Production Capacity"
+      }
+    },
+    "ourAchievement": {
+      "title": "Our Achievements",
+      "description": "Our journey is built on trust, innovation, and global partnerships. From humble beginnings, we've grown into a reliable bridge connecting exporters and importers around the world.",
+      "achievements": {
+        "excellence": {
+          "title": "3+ Years of Global Trade Excellence",
+          "description": "With over 3 years of experience in international commerce, we've developed deep expertise in logistics, documentation, and trade compliance — empowering businesses to expand confidently across borders."
+        },
+        "trusted": {
+          "title": "Trusted by Hundreds of Clients",
+          "description": "Our success is measured by the satisfaction of our partners. From small manufacturers to large distributors, our clients' growth stories inspire us to keep improving every day."
+        },
+        "recognized": {
+          "title": "Recognized in the Export Industry",
+          "description": "We've earned recognition for our dedication to efficiency, transparency, and innovation in export management — solidifying our reputation as a trusted global trade partner."
+        }
+      }
+    },
+    "placeOnOrder": {
+      "title": "How to Place an Order",
+      "description": "Simple and transparent process to help you import and export goods with confidence.",
+      "steps": {
+        "step1": {
+          "step": "Step 01",
+          "title": "Send Your Inquiry",
+          "description": "Tell us what product you need, the quantity, and your destination country. Our team will review your request and provide the best quotation within 24 hours."
+        },
+        "step2": {
+          "step": "Step 02",
+          "title": "Confirm Your Order",
+          "description": "Once you're satisfied with the quotation and terms, confirm your order. We'll prepare all necessary export documents and begin the process."
+        },
+        "step3": {
+          "step": "Step 03",
+          "title": "Production & Quality Check",
+          "description": "Your products are carefully produced and go through a strict quality inspection before shipment to ensure compliance with international standards."
+        },
+        "step4": {
+          "step": "Step 04",
+          "title": "Secure Payment",
+          "description": "Make payment through our trusted banking or LC (Letter of Credit) channels. We ensure all transactions are protected and transparent."
+        },
+        "step5": {
+          "step": "Step 05",
+          "title": "Shipping & Delivery",
+          "description": "We handle all logistics, from port to destination. Tracking details are shared so you can monitor your shipment in real time."
+        },
+        "step6": {
+          "step": "Step 06",
+          "title": "After-Sales Support",
+          "description": "Our service doesn't end at delivery. We provide continuous support for documentation, reorders, and customer feedback."
+        }
+      }
+    },
+    "profileCompany": {
+      "title": "Explore Our Work",
+      "description": "Take a closer look at our production process, quality control, and shipment operations around the world.",
+      "watchVideo": "Watch Company Video"
+    }
   }
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import StoryCard from '../../ui/StoryCard';
+import StoryCard from '../../ui/HomeComponent/StoryCard';
 import { useTranslations } from 'next-intl';
 
 

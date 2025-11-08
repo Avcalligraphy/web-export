@@ -8,7 +8,7 @@
     "home": "Beranda",
     "about": "Tentang",
     "products": "Produk",
-    "factorQuality": "Faktor & Kualitas",
+    "factorQuality": "Pabrik & Kualitas",
     "exportShipping": "Ekspor & Pengiriman"
   },
   "hero": {
@@ -109,6 +109,76 @@
     "copyright": "© {year} Nama Perusahaan. Hak cipta dilindungi.",
     "privacyPolicy": "Kebijakan Privasi",
     "termsOfService": "Syarat Layanan"
+  },
+  "about": {
+    "aboutHero": {
+      "title": "Perjalanan Kami",
+      "description": "Cerita kami dimulai dengan misi sederhana — membawa briket arang kelapa terbaik Indonesia ke dunia. Dari awal yang sederhana, kami telah berkembang menjadi eksportir global terpercaya, dikenal karena kualitas konsisten, produksi berkelanjutan, dan kemitraan jangka panjang dengan pembeli internasional.",
+      "stats": {
+        "exportDestinations": "Tujuan Ekspor",
+        "satisfiedBuyers": "Pembeli Puas",
+        "productionCapacity": "Kapasitas Produksi"
+      }
+    },
+    "ourAchievement": {
+      "title": "Pencapaian Kami",
+      "description": "Perjalanan kami dibangun di atas kepercayaan, inovasi, dan kemitraan global. Dari awal yang sederhana, kami telah berkembang menjadi jembatan terpercaya yang menghubungkan eksportir dan importir di seluruh dunia.",
+      "achievements": {
+        "excellence": {
+          "title": "3+ Tahun Keunggulan Perdagangan Global",
+          "description": "Dengan pengalaman lebih dari 3 tahun dalam perdagangan internasional, kami telah mengembangkan keahlian mendalam dalam logistik, dokumentasi, dan kepatuhan perdagangan — memberdayakan bisnis untuk berkembang dengan percaya diri melintasi batas."
+        },
+        "trusted": {
+          "title": "Dipercaya oleh Ratusan Klien",
+          "description": "Kesuksesan kami diukur dari kepuasan mitra kami. Dari produsen kecil hingga distributor besar, kisah pertumbuhan klien kami menginspirasi kami untuk terus meningkatkan setiap hari."
+        },
+        "recognized": {
+          "title": "Diakui dalam Industri Ekspor",
+          "description": "Kami telah mendapatkan pengakuan atas dedikasi kami terhadap efisiensi, transparansi, dan inovasi dalam manajemen ekspor — memperkuat reputasi kami sebagai mitra perdagangan global terpercaya."
+        }
+      }
+    },
+    "placeOnOrder": {
+      "title": "Cara Memesan",
+      "description": "Proses sederhana dan transparan untuk membantu Anda mengimpor dan mengekspor barang dengan percaya diri.",
+      "steps": {
+        "step1": {
+          "step": "Langkah 01",
+          "title": "Kirim Permintaan Anda",
+          "description": "Beritahu kami produk yang Anda butuhkan, kuantitas, dan negara tujuan. Tim kami akan meninjau permintaan Anda dan memberikan penawaran terbaik dalam 24 jam."
+        },
+        "step2": {
+          "step": "Langkah 02",
+          "title": "Konfirmasi Pesanan Anda",
+          "description": "Setelah Anda puas dengan penawaran dan syarat, konfirmasikan pesanan Anda. Kami akan menyiapkan semua dokumen ekspor yang diperlukan dan memulai proses."
+        },
+        "step3": {
+          "step": "Langkah 03",
+          "title": "Produksi & Pemeriksaan Kualitas",
+          "description": "Produk Anda diproduksi dengan hati-hati dan melalui inspeksi kualitas yang ketat sebelum pengiriman untuk memastikan kepatuhan dengan standar internasional."
+        },
+        "step4": {
+          "step": "Langkah 04",
+          "title": "Pembayaran Aman",
+          "description": "Lakukan pembayaran melalui saluran perbankan terpercaya kami atau LC (Letter of Credit). Kami memastikan semua transaksi dilindungi dan transparan."
+        },
+        "step5": {
+          "step": "Langkah 05",
+          "title": "Pengiriman & Pengiriman",
+          "description": "Kami menangani semua logistik, dari pelabuhan ke tujuan. Detail pelacakan dibagikan sehingga Anda dapat memantau pengiriman Anda secara real time."
+        },
+        "step6": {
+          "step": "Langkah 06",
+          "title": "Dukungan Purna Jual",
+          "description": "Layanan kami tidak berakhir saat pengiriman. Kami menyediakan dukungan berkelanjutan untuk dokumentasi, pemesanan ulang, dan umpan balik pelanggan."
+        }
+      }
+    },
+    "profileCompany": {
+      "title": "Jelajahi Pekerjaan Kami",
+      "description": "Lihat lebih dekat proses produksi, kontrol kualitas, dan operasi pengiriman kami di seluruh dunia.",
+      "watchVideo": "Tonton Video Perusahaan"
+    }
   }
 }
 

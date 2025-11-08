@@ -1,4 +1,4 @@
-import ContainerProduct from "@/components/ui/ContainerProduct";
+import ContainerProduct from "@/components/ui/HomeComponent/ContainerProduct";
 import { useTranslations } from "next-intl";
 
 

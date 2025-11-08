@@ -29,7 +29,7 @@ export default function Navbar() {
     { label: t('home'), href: `/${locale}`, path: '' },
     { label: t('about'), href: `/${locale}/about`, path: '/about' },
     { label: t('products'), href: `/${locale}/products`, path: '/products' },
-    { label: t('factorQuality'), href: `/${locale}/factor-quality`, path: '/factor-quality' },
+    { label: t('factorQuality'), href: `/${locale}/factory-quality`, path: '/factory-quality' },
     { label: t('exportShipping'), href: `/${locale}/export-shipping`, path: '/export-shipping' },
   ];
 

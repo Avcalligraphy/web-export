@@ -10,6 +10,7 @@ const languageNames: Record<Locale, string> = {
   id: 'ID',
   en: 'EN',
   zh: '中文',
+  ar: 'العربية',
 };
 
 export default function LanguageSwitcher() {
@@ -17,6 +18,7 @@ export default function LanguageSwitcher() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const isRTL = locale === 'ar';
 
   // Get path without locale
   const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
@@ -60,7 +62,7 @@ export default function LanguageSwitcher() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full right-0 mt-2 w-32 bg-primary border border-gray-200 rounded-lg shadow-lg overflow-hidden z-50">
+        <div className={`absolute top-full mt-2 w-32 bg-primary border border-gray-200 rounded-lg shadow-lg overflow-hidden z-50 ${isRTL ? 'left-0' : 'right-0'}`}>
           {otherLocales.map((loc) => (
             <Link
               key={loc}

@@ -1,6 +1,24 @@
+// HOME PAGE
 export { default as Hero } from "./Home/Hero";
 export { default as Features } from "./Home/Features";
 export { default as OurStory } from "./Home/OurStory";
 export { default as Product } from "./Home/Product";
 export { default as ClientSays } from "./Home/ClientSays";
 export { default as Certificates } from "./Home/Certificates";
+
+// ABOUT PAGE
+export { default as AboutHero } from "./About/AboutHero";
+export {default as OurAchievement} from "./About/OurAchievement";
+export {default as PlaceOnOrder} from "./About/PlaceOnOrder";
+export {default as ProfileCompany} from "./About/ProfileCompany";
+
+
+// PRODUCTS PAGE
+export { default as ProductHero } from "./Products/ProductHero";
+export { default as HookahProduct } from "./Products/HookahProduct";
+export { default as BBQProduct } from "./Products/BBQProduct";
+export { default as CustomShapeProduct } from "./Products/CustomShapeProduct";
+export { default as BannerProducct } from "./Products/BannerProducct";
+
+// FACTORY AND QUALITY PAGE
+export { default as FactoryHero } from "./FactoryAndQuality/FactoryHero";

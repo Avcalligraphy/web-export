@@ -19,7 +19,7 @@ export default function ContainerClientSays({ stars, name, title, description, i
             ))}
         </div>
         <h3 className="text-2xl font-semibold text-foreground font-urbanist mt-10">{title}</h3>
-        <p className="text-lg text-foreground font-urbanist font-regular mt-3.5 flex-1">
+        <p className="text-base text-foreground font-urbanist font-regular mt-3.5 flex-1">
         {description}
         </p>
 

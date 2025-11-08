@@ -1,0 +1,175 @@
+import Button from "../../ui/Button";
+
+export default function BBQProduct() {
+  return (
+    <section className="container mx-auto">
+    <div className="flex flex-row justify-between items-center ">
+      <div className="flex flex-col item-start justify-start mr-20">
+        <img
+          src="/assets/icons/ic_logo_product.png"
+          alt="Hookah Product"
+          className="w-20 h-20"
+        />
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground font-urbanist mt-12.5">
+        Custom Charcoal Shapes & Packaging
+        </h2>
+        <p className="text-sm sm:text-base md:text-lg text-foreground/50 font-urbanist font-regular mt-2 md:mt-3.5 mb-12.5">
+          Experience premium-quality coconut charcoal briquettes designed
+          specifically for hookah and shisha use — consistent heat, long
+          burning time, and low ash content.
+        </p>
+        <Button
+          variant="secondary"
+          size="md"
+          className="w-full rounded-xl border-[1px] border-gray-200"
+        >
+          <div className="flex flex-row items-center justify-center">
+            <span className="text-sm sm:text-base md:text-lg text-foreground font-urbanist font-regular mr-2">
+              Request a Quote
+            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="32"
+              height="32"
+              role="img"
+              aria-labelledby="arrowUpRight"
+            >
+              <title id="arrowUpRight">Arrow 60 Degrees Up Right</title>
+              <path
+                d="M6 18 L17 7"
+                stroke="#E50000"
+                strokeWidth="2"
+                fill="none"
+                strokeLinecap="round"
+              />
+              <path
+                d="M10 7h7v7"
+                stroke="#E50000"
+                strokeWidth="2"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+        </Button>
+        <div className="mt-6">
+          <div className="border border-gray-200 bg-secondary rounded-xl p-7.5 flex flex-row items-center justify-between">
+            <div>
+            <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
+            Exported To
+            </p>
+            <h4 className="text-xl font-semibold text-foreground font-urbanist">
+            20+ Countries 
+            </h4>
+            </div>
+
+            <img src="/assets/icons/ic_avatars.png" alt="avatars" className="w-auto h-17.5" />
+
+          </div>
+        </div>
+      </div>
+      <div className="flex-1  border-l border-gray-200 p-20">
+        <div className="flex flex-row gap-5 items-center">
+          <h3 className="text-xl sm:text-2xl md:text-2xl font-semibold text-foreground font-urbanist">
+            Variety & Specifications
+          </h3>
+          <p className="text-sm sm:text-base md:text-lg text-foreground/50 font-urbanist font-regular">
+            Available in multiple sizes and shapes: Cube 25mm | Finger |
+            Hexagonal
+          </p>
+        </div>
+        <div className="mt-6 flex flex-row gap-7.5">
+          <div
+            style={{ backgroundImage: "url('/assets/images/hookah-1.png')" }}
+            className="w-110 h-83 bg-cover bg-center bg-no-repeat flex flex-col justify-end items-start p-6"
+          >
+            <h4 className="text-xl font-semibold text-foreground font-urbanist">
+              Coconut Charcoal Briquette – Cube 25mm
+            </h4>
+            <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
+              Ash Content: &lt;2% | Moisture: &lt;6% | Burning Time: 3+ Hours
+            </p>
+          </div>
+          <div
+            style={{ backgroundImage: "url('/assets/images/hookah-2.png')" }}
+            className="w-110 h-83 bg-cover bg-center bg-no-repeat flex flex-col justify-end items-start p-6"
+          >
+            <h4 className="text-xl font-semibold text-foreground font-urbanist">
+              Packaging Options
+            </h4>
+            <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular max-w-70">
+              Kraft & Printed Box 1 kg | 10 kg | Custom Private Label
+            </p>
+          </div>
+        </div>
+        <div className="mt-7.5 flex flex-row gap-5">
+          <div className="border border-gray-200 bg-secondary rounded-xl p-7.5">
+            <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
+              Monthly Production Capacity
+            </p>
+            <h4 className="text-xl font-semibold text-foreground font-urbanist">
+              Up to 200 Tons / Month
+            </h4>
+          </div>
+          <div className="border border-gray-200 bg-secondary rounded-xl p-7.5 flex-1 flex flex-row gap-5 items-center justify-between">
+            <div>
+              <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
+                {" "}
+                Packaging & Branding
+              </p>
+              <h4 className="text-xl font-semibold text-foreground font-urbanist">
+                Custom OEM Available
+              </h4>
+            </div>
+            <Button
+              variant="primary"
+              size="md"
+              className="rounded-xl  flex flex-row gap-4 items-center justify-center"
+            >
+              <span className="text-sm sm:text-base text-foreground font-urbanist font-regular">
+                View Example
+              </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                role="img"
+                aria-labelledby="eye1"
+              >
+                <title id="eye1">Eye</title>
+                <path
+                  d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"
+                  fill="none"
+                  stroke="#ffff"
+                  strokeWidth="2"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="3"
+                  fill="none"
+                  stroke="#ffff"
+                  strokeWidth="2"
+                />
+              </svg>
+            </Button>
+          </div>
+        </div>
+        <div className="mt-6">
+          <div className="border border-gray-200 bg-secondary rounded-xl p-7.5">
+            <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
+              Quality Certification
+            </p>
+            <h4 className="text-xl font-semibold text-foreground font-urbanist">
+              SGS, ISO, Halal Certified
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  );
+}
