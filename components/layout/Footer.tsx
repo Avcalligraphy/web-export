@@ -1,7 +1,17 @@
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 export default function Footer() {
   const t = useTranslations('footer');
+  const tCommon = useTranslations('common');
+  const locale = useLocale();
+
+  const menuItems = [
+    { label: tCommon('home'), href: `/${locale}` },
+    { label: tCommon('about'), href: `/${locale}/about` },
+    { label: tCommon('products'), href: `/${locale}/products` },
+    { label: tCommon('factorQuality'), href: `/${locale}/factor-quality` },
+    { label: tCommon('exportShipping'), href: `/${locale}/export-shipping` },
+  ];
   return (
     <footer className="bg-secondary border-t border-gray-200 mt-30">
       <div className="container mx-auto px-4 py-16">
@@ -51,46 +61,13 @@ export default function Footer() {
               {t('quickLinks')}
             </h4>
             <ul className="space-y-4">
-              <li>
-                <Link
-                  href="/"
-                  className="text-base text-foreground/50 font-urbanist font-regular hover:text-foreground transition-colors"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-base text-foreground/50 font-urbanist font-regular hover:text-foreground transition-colors"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products"
-                  className="text-base text-foreground/50 font-urbanist font-regular hover:text-foreground transition-colors"
-                >
-                  Products
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/factor-quality"
-                  className="text-base text-foreground/50 font-urbanist font-regular hover:text-foreground transition-colors"
-                >
-                  Factor & Quality
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/export-shipping"
-                  className="text-base text-foreground/50 font-urbanist font-regular hover:text-foreground transition-colors"
-                >
-                  Export Shipping
-                </Link>
-              </li>
+              {menuItems.map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="text-base text-foreground/50 font-urbanist font-regular hover:text-foreground transition-colors">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
