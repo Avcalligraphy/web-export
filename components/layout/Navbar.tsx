@@ -93,9 +93,11 @@ export default function Navbar() {
             <div className="hidden sm:block">
               <LanguageSwitcher />
             </div>
+            <Link href={`/${locale}/contact-us`}>
             <Button variant="primary" size="md" className="hidden sm:block w-[120px] md:w-[160px] rounded-[20px] text-xs md:text-sm">
               {t('contactUs')}
             </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

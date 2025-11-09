@@ -22,3 +22,8 @@ export { default as BannerProducct } from "./Products/BannerProducct";
 
 // FACTORY AND QUALITY PAGE
 export { default as FactoryHero } from "./FactoryAndQuality/FactoryHero";
+
+// CONTACT US PAGE
+export { default as HeroContact } from "./ContactUs/HeroContact";
+export { default as SendInquiry } from "./ContactUs/SendInquiry";
+export { default as GlobalPresence } from "./ContactUs/GlobalPresence";

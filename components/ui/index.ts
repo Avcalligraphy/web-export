@@ -19,3 +19,5 @@ export { default as ContainerPlaceOnOrder } from "./AboutComponent/ContainerPlac
 // Components for Products
 export { default as HeroCardProduct } from "./ProductsComponent/HeroCardProduct";
 
+// Components for Contact Us
+export { default as ContainerGlobalPresence } from "./ContactComponent/ContainerGlobalPresence";
