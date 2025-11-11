@@ -1,10 +1,12 @@
-import { ProductGallery } from "@/components/sections";
+import { ProductGallery, DescriptGallery, ContactCatalog } from "@/components/sections";
 
 
 export default function CatalogProductPage() {
   return (
-    <main>
+    <main >
       <ProductGallery />
+      <DescriptGallery />
+      <ContactCatalog />
     </main>
   );
 }

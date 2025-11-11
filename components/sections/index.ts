@@ -23,6 +23,8 @@ export { default as BannerProducct } from "./Products/BannerProducct";
 
 // CATALOG PRODUCT PAGE
 export { default as ProductGallery } from "./CatalogProduct/ProductGallery";
+export { default as DescriptGallery } from "./CatalogProduct/DescriptGallery";
+export { default as ContactCatalog } from "./CatalogProduct/ContactCatalog";
 
 
 // FACTORY AND QUALITY PAGE
@@ -34,3 +36,8 @@ export { default as SendInquiry } from "./ContactUs/SendInquiry";
 export { default as GlobalPresence } from "./ContactUs/GlobalPresence";
 export { default as ExploreBriquette } from "./ContactUs/ExploreBriquette";
 export { default as BannerExplore } from "./ContactUs/BannerExplore";
+
+// EXPORT SHIPPING PAGE
+export { default as HeroShipping } from "./ExportShipping/HeroShipping";
+export { default as WorldWideSipping } from "./ExportShipping/WorldWideSipping";
+export { default as ShippingMap } from "./ExportShipping/ShippingMap";
