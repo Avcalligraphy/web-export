@@ -27,3 +27,5 @@ export { default as FactoryHero } from "./FactoryAndQuality/FactoryHero";
 export { default as HeroContact } from "./ContactUs/HeroContact";
 export { default as SendInquiry } from "./ContactUs/SendInquiry";
 export { default as GlobalPresence } from "./ContactUs/GlobalPresence";
+export { default as ExploreBriquette } from "./ContactUs/ExploreBriquette";
+export { default as BannerExplore } from "./ContactUs/BannerExplore";

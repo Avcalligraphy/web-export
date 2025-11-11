@@ -6,8 +6,11 @@ import SelectInput from "./SelectInput";
 import TextareaInput from "./TextareaInput";
 import CheckboxInput from "./CheckboxInput";
 import { Button } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
 export default function InquiryForm() {
+  const t = useTranslations("contactUs.inquiryForm");
+  
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission here
@@ -15,31 +18,31 @@ export default function InquiryForm() {
   };
 
   const regionOptions = [
-    { value: "asia", label: "Asia" },
-    { value: "europe", label: "Europe" },
-    { value: "americas", label: "Americas" },
-    { value: "africa", label: "Africa" },
-    { value: "oceania", label: "Oceania" },
+    { value: "asia", label: t("regions.asia") },
+    { value: "europe", label: t("regions.europe") },
+    { value: "americas", label: t("regions.americas") },
+    { value: "africa", label: t("regions.africa") },
+    { value: "oceania", label: t("regions.oceania") },
   ];
 
   const productOptions = [
-    { value: "coconut-charcoal", label: "Coconut Charcoal" },
-    { value: "briquettes", label: "Briquettes" },
-    { value: "hookah-charcoal", label: "Hookah Charcoal" },
+    { value: "coconut-charcoal", label: t("products.coconutCharcoal") },
+    { value: "briquettes", label: t("products.briquettes") },
+    { value: "hookah-charcoal", label: t("products.hookahCharcoal") },
   ];
 
   const quantityOptions = [
-    { value: "1-10", label: "1-10 tons" },
-    { value: "11-50", label: "11-50 tons" },
-    { value: "51-100", label: "51-100 tons" },
-    { value: "100+", label: "100+ tons" },
+    { value: "1-10", label: t("quantities.1-10") },
+    { value: "11-50", label: t("quantities.11-50") },
+    { value: "51-100", label: t("quantities.51-100") },
+    { value: "100+", label: t("quantities.100+") },
   ];
 
   const packagingOptions = [
-    { value: "bags", label: "Bags" },
-    { value: "boxes", label: "Boxes" },
-    { value: "bulk", label: "Bulk" },
-    { value: "custom", label: "Custom Packaging" },
+    { value: "bags", label: t("packaging.bags") },
+    { value: "boxes", label: t("packaging.boxes") },
+    { value: "bulk", label: t("packaging.bulk") },
+    { value: "custom", label: t("packaging.custom") },
   ];
 
   return (
@@ -47,20 +50,20 @@ export default function InquiryForm() {
       {/* Row 1 */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <TextInput
-          label="First Name"
-          placeholder="Enter First Name"
+          label={t("firstName")}
+          placeholder={t("placeholders.firstName")}
           name="firstName"
           required
         />
         <TextInput
-          label="Last Name"
-          placeholder="Enter Last Name"
+          label={t("lastName")}
+          placeholder={t("placeholders.lastName")}
           name="lastName"
           required
         />
         <TextInput
-          label="Email"
-          placeholder="Enter your Email"
+          label={t("email")}
+          placeholder={t("placeholders.email")}
           name="email"
           type="email"
           required
@@ -70,22 +73,22 @@ export default function InquiryForm() {
       {/* Row 2 */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <TextInput
-          label="Phone"
-          placeholder="Enter Phone Number"
+          label={t("phone")}
+          placeholder={t("placeholders.phone")}
           name="phone"
           type="tel"
           required
         />
         <SelectInput
-          label="Region"
-          placeholder="Select Your Region"
+          label={t("region")}
+          placeholder={t("placeholders.selectRegion")}
           name="region"
           options={regionOptions}
           required
         />
         <SelectInput
-          label="Product Interest"
-          placeholder="Select Your Product"
+          label={t("productInterest")}
+          placeholder={t("placeholders.selectProduct")}
           name="productInterest"
           options={productOptions}
           required
@@ -95,15 +98,15 @@ export default function InquiryForm() {
       {/* Row 3 */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <SelectInput
-          label="Quantity Required"
-          placeholder="Select Your Quantity"
+          label={t("quantityRequired")}
+          placeholder={t("placeholders.selectQuantity")}
           name="quantity"
           options={quantityOptions}
           required
         />
         <SelectInput
-          label="Preferred Packaging"
-          placeholder="Select Your Packaging"
+          label={t("preferredPackaging")}
+          placeholder={t("placeholders.selectPackaging")}
           name="packaging"
           options={packagingOptions}
           required
@@ -113,8 +116,8 @@ export default function InquiryForm() {
       {/* Row 4 */}
       <div>
         <TextareaInput
-          label="Message"
-          placeholder="Enter your Message here.."
+          label={t("message")}
+          placeholder={t("placeholders.message")}
           name="message"
           rows={5}
         />
@@ -124,10 +127,10 @@ export default function InquiryForm() {
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <CheckboxInput
           name="terms"
-          label="I agree with"
+          label={t("terms.agree")}
           linkTexts={[
-            { text: "Terms of Use", href: "#" },
-            { text: "Privacy Policy", href: "#" },
+            { text: t("terms.termsOfUse"), href: "#" },
+            { text: t("terms.privacyPolicy"), href: "#" },
           ]}
           required
         />
@@ -137,7 +140,7 @@ export default function InquiryForm() {
           size="md"
           className="w-full sm:w-auto"
         >
-          Send Inquiry
+          {t("submit")}
         </Button>
       </div>
     </form>

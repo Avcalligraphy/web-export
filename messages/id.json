@@ -179,6 +179,92 @@
       "description": "Lihat lebih dekat proses produksi, kontrol kualitas, dan operasi pengiriman kami di seluruh dunia.",
       "watchVideo": "Tonton Video Perusahaan"
     }
+  },
+  "contactUs": {
+    "heroContact": {
+      "title": "Hubungi Kami",
+      "description": "Baik Anda distributor, grosir, atau pemilik merek — kami siap mendukung bisnis Anda dengan briket arang kelapa premium dan layanan ekspor yang andal di seluruh dunia."
+    },
+    "sendInquiry": {
+      "title": "Kirimkan Pertanyaan",
+      "description": "Beritahu kami apa yang Anda butuhkan — tim ekspor kami akan menghubungi Anda dalam 24 jam dengan detail lengkap, harga, dan opsi pengiriman."
+    },
+    "globalPresence": {
+      "title": "Kehadiran Global Kami",
+      "description": "Kami beroperasi dengan komitmen kuat terhadap kualitas dan keandalan dari kantor pusat utama kami di Indonesia, didukung oleh kantor regional untuk melayani klien di seluruh dunia. Setiap pengiriman dikelola dengan presisi dan perhatian untuk memastikan pengiriman tepat waktu dan kemitraan yang terpercaya.",
+      "tabs": {
+        "all": "Semua",
+        "province": "Provinsi",
+        "city": "Kota"
+      },
+      "headquarters": {
+        "label": "Kantor Pusat Utama",
+        "address": "Jl. Raya Pelabuhan No. 12, Surabaya",
+        "description": "Pusat produksi dan ekspor utama kami, di mana kami mengelola manufaktur, pengemasan, dan logistik internasional untuk semua pengiriman briket arang kelapa.",
+        "getDirection": "Dapatkan Arah"
+      }
+    },
+    "exploreBriquette": {
+      "title": "Jelajahi Dunia Briquette",
+      "description": "Masuk ke dunia Briquette, di mana profesionalisme bertemu dengan kehangatan, dan keahlian bertemu dengan passion. Galeri kami menawarkan sekilas tentang tim dan ruang kerja kami, mengundang Anda untuk mengenal kami lebih baik."
+    },
+    "bannerExplore": {
+      "title": "Mulai Perjalanan Ekspor Anda Bersama Kami",
+      "description": "Bawa briket arang kelapa premium dari Indonesia ke dunia. Baik Anda distributor, grosir, atau pemilik merek, kami menyediakan produk berkualitas tinggi, pengiriman yang andal, dan dukungan kemasan OEM penuh. Ambil langkah pertama menuju membangun kemitraan ekspor yang langgeng dengan kami hari ini.",
+      "button": "Jelajahi Produk Kami"
+    },
+    "inquiryForm": {
+      "firstName": "Nama Depan",
+      "lastName": "Nama Belakang",
+      "email": "Email",
+      "phone": "Telepon",
+      "region": "Wilayah",
+      "productInterest": "Minat Produk",
+      "quantityRequired": "Jumlah yang Diperlukan",
+      "preferredPackaging": "Kemasan yang Disukai",
+      "message": "Pesan",
+      "placeholders": {
+        "firstName": "Masukkan Nama Depan",
+        "lastName": "Masukkan Nama Belakang",
+        "email": "Masukkan Email Anda",
+        "phone": "Masukkan Nomor Telepon",
+        "selectRegion": "Pilih Wilayah Anda",
+        "selectProduct": "Pilih Produk Anda",
+        "selectQuantity": "Pilih Jumlah Anda",
+        "selectPackaging": "Pilih Kemasan Anda",
+        "message": "Masukkan Pesan Anda di sini.."
+      },
+      "regions": {
+        "asia": "Asia",
+        "europe": "Eropa",
+        "americas": "Amerika",
+        "africa": "Afrika",
+        "oceania": "Oseania"
+      },
+      "products": {
+        "coconutCharcoal": "Arang Kelapa",
+        "briquettes": "Briket",
+        "hookahCharcoal": "Arang Hookah"
+      },
+      "quantities": {
+        "1-10": "1-10 ton",
+        "11-50": "11-50 ton",
+        "51-100": "51-100 ton",
+        "100+": "100+ ton"
+      },
+      "packaging": {
+        "bags": "Kantong",
+        "boxes": "Kotak",
+        "bulk": "Curah",
+        "custom": "Kemasan Kustom"
+      },
+      "terms": {
+        "agree": "Saya setuju dengan",
+        "termsOfUse": "Syarat Penggunaan",
+        "privacyPolicy": "Kebijakan Privasi"
+      },
+      "submit": "Kirim Pertanyaan"
+    }
   }
 }
 

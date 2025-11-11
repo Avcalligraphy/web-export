@@ -179,6 +179,92 @@
       "description": "仔细看看我们的生产过程、质量控制和世界各地的运输业务。",
       "watchVideo": "观看公司视频"
     }
+  },
+  "contactUs": {
+    "heroContact": {
+      "title": "联系我们",
+      "description": "无论您是分销商、批发商还是品牌所有者 — 我们随时准备通过优质椰壳炭砖和可靠的全球出口服务支持您的业务。"
+    },
+    "sendInquiry": {
+      "title": "发送询价",
+      "description": "告诉我们您的需求 — 我们的出口团队将在 24 小时内回复您，提供完整的详细信息、价格和运输选项。"
+    },
+    "globalPresence": {
+      "title": "我们的全球存在",
+      "description": "我们在印度尼西亚的主要总部以对质量和可靠性的坚定承诺运营，并得到区域办事处的支持，为全球客户提供服务。每批货物都经过精确和细心的管理，以确保及时交付和值得信赖的合作伙伴关系。",
+      "tabs": {
+        "all": "全部",
+        "province": "省份",
+        "city": "城市"
+      },
+      "headquarters": {
+        "label": "主要总部",
+        "address": "Jl. Raya Pelabuhan No. 12, Surabaya",
+        "description": "我们的主要生产和出口中心，我们在这里管理所有椰壳炭砖货物的制造、包装和国际物流。",
+        "getDirection": "获取方向"
+      }
+    },
+    "exploreBriquette": {
+      "title": "探索 Briquette 的世界",
+      "description": "走进 Briquette 的世界，专业与温暖相遇，专业知识与激情相遇。我们的画廊让您一睹我们的团队和工作空间，邀请您更好地了解我们。"
+    },
+    "bannerExplore": {
+      "title": "与我们开始您的出口之旅",
+      "description": "将优质椰壳炭砖从印度尼西亚带到世界。无论您是分销商、批发商还是品牌所有者，我们提供高质量的产品、可靠的运输和完整的 OEM 包装支持。今天迈出第一步，与我们建立持久的出口合作伙伴关系。",
+      "button": "探索我们的产品"
+    },
+    "inquiryForm": {
+      "firstName": "名字",
+      "lastName": "姓氏",
+      "email": "电子邮件",
+      "phone": "电话",
+      "region": "地区",
+      "productInterest": "产品兴趣",
+      "quantityRequired": "所需数量",
+      "preferredPackaging": "首选包装",
+      "message": "消息",
+      "placeholders": {
+        "firstName": "输入名字",
+        "lastName": "输入姓氏",
+        "email": "输入您的电子邮件",
+        "phone": "输入电话号码",
+        "selectRegion": "选择您的地区",
+        "selectProduct": "选择您的产品",
+        "selectQuantity": "选择您的数量",
+        "selectPackaging": "选择您的包装",
+        "message": "在此输入您的消息.."
+      },
+      "regions": {
+        "asia": "亚洲",
+        "europe": "欧洲",
+        "americas": "美洲",
+        "africa": "非洲",
+        "oceania": "大洋洲"
+      },
+      "products": {
+        "coconutCharcoal": "椰壳炭",
+        "briquettes": "炭砖",
+        "hookahCharcoal": "水烟炭"
+      },
+      "quantities": {
+        "1-10": "1-10 吨",
+        "11-50": "11-50 吨",
+        "51-100": "51-100 吨",
+        "100+": "100+ 吨"
+      },
+      "packaging": {
+        "bags": "袋子",
+        "boxes": "盒子",
+        "bulk": "散装",
+        "custom": "定制包装"
+      },
+      "terms": {
+        "agree": "我同意",
+        "termsOfUse": "使用条款",
+        "privacyPolicy": "隐私政策"
+      },
+      "submit": "发送询价"
+    }
   }
 }
 

@@ -181,6 +181,92 @@
       "description": "Take a closer look at our production process, quality control, and shipment operations around the world.",
       "watchVideo": "Watch Company Video"
     }
+  },
+  "contactUs": {
+    "heroContact": {
+      "title": "Get in Touch With Us",
+      "description": "Whether you're a distributor, wholesaler, or brand owner — we're here to support your business with premium coconut charcoal briquettes and reliable export services worldwide."
+    },
+    "sendInquiry": {
+      "title": "Send Us an Inquiry",
+      "description": "Tell us what you need — our export team will get back to you within 24 hours with full details, pricing, and shipping options."
+    },
+    "globalPresence": {
+      "title": "Our Global Presence",
+      "description": "We operate with a strong commitment to quality and reliability from our main headquarters in Indonesia, supported by regional offices to serve clients across the globe. Every shipment is managed with precision and care to ensure timely delivery and trusted partnerships.",
+      "tabs": {
+        "all": "All",
+        "province": "Province",
+        "city": "City"
+      },
+      "headquarters": {
+        "label": "Main Headquarters",
+        "address": "Jl. Raya Pelabuhan No. 12, Surabaya",
+        "description": "Our main production and export hub, where we manage manufacturing, packaging, and international logistics for all coconut charcoal briquette shipments.",
+        "getDirection": "Get Direction"
+      }
+    },
+    "exploreBriquette": {
+      "title": "Explore Briquette's World",
+      "description": "Step inside the world of Briquette, where professionalism meets warmth, and expertise meets passion. Our gallery offers a glimpse into our team and workspaces, inviting you to get to know us better."
+    },
+    "bannerExplore": {
+      "title": "Start Your Export Journey With Us",
+      "description": "Bring premium coconut charcoal briquettes from Indonesia to the world. Whether you're a distributor, wholesaler, or brand owner, we provide high-quality products, reliable shipping, and full OEM packaging support. Take the first step toward building a lasting export partnership with us today.",
+      "button": "Explore Our Products"
+    },
+    "inquiryForm": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "region": "Region",
+      "productInterest": "Product Interest",
+      "quantityRequired": "Quantity Required",
+      "preferredPackaging": "Preferred Packaging",
+      "message": "Message",
+      "placeholders": {
+        "firstName": "Enter First Name",
+        "lastName": "Enter Last Name",
+        "email": "Enter your Email",
+        "phone": "Enter Phone Number",
+        "selectRegion": "Select Your Region",
+        "selectProduct": "Select Your Product",
+        "selectQuantity": "Select Your Quantity",
+        "selectPackaging": "Select Your Packaging",
+        "message": "Enter your Message here.."
+      },
+      "regions": {
+        "asia": "Asia",
+        "europe": "Europe",
+        "americas": "Americas",
+        "africa": "Africa",
+        "oceania": "Oceania"
+      },
+      "products": {
+        "coconutCharcoal": "Coconut Charcoal",
+        "briquettes": "Briquettes",
+        "hookahCharcoal": "Hookah Charcoal"
+      },
+      "quantities": {
+        "1-10": "1-10 tons",
+        "11-50": "11-50 tons",
+        "51-100": "51-100 tons",
+        "100+": "100+ tons"
+      },
+      "packaging": {
+        "bags": "Bags",
+        "boxes": "Boxes",
+        "bulk": "Bulk",
+        "custom": "Custom Packaging"
+      },
+      "terms": {
+        "agree": "I agree with",
+        "termsOfUse": "Terms of Use",
+        "privacyPolicy": "Privacy Policy"
+      },
+      "submit": "Send Inquiry"
+    }
   }
 }
 
