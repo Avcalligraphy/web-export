@@ -20,6 +20,11 @@ export { default as BBQProduct } from "./Products/BBQProduct";
 export { default as CustomShapeProduct } from "./Products/CustomShapeProduct";
 export { default as BannerProducct } from "./Products/BannerProducct";
 
+
+// CATALOG PRODUCT PAGE
+export { default as ProductGallery } from "./CatalogProduct/ProductGallery";
+
+
 // FACTORY AND QUALITY PAGE
 export { default as FactoryHero } from "./FactoryAndQuality/FactoryHero";
 
