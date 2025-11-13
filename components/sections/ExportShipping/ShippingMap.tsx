@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from 'next-intl';
 
 interface MarkerData {
   id: number;
@@ -91,6 +92,7 @@ const markers: MarkerData[] = [
 ];
 
 export default function ShippingMap() {
+  const t = useTranslations('exportShipping.shippingMap');
   const [activeMarker, setActiveMarker] = useState<number | null>(null);
   const [clickedMarker, setClickedMarker] = useState<number | null>(null);
 
@@ -135,10 +137,10 @@ export default function ShippingMap() {
           className="w-auto h-5 md:h-6 mb-3 md:mb-4"
         />
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground font-urbanist mb-3 md:mb-3.5">
-        Shipping Maps
+        {t('title')}
         </h2>
         <p className="text-sm sm:text-base md:text-lg text-foreground/50 font-urbanist font-medium">
-        A meticulous journey of transforming natural coconut shells into high-performance charcoal briquettes trusted by global buyers.
+        {t('description')}
         </p>
       </div>
     </section>

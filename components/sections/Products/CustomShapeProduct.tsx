@@ -2,9 +2,9 @@ import Button from "../../ui/Button";
 
 export default function CustomShapeProduct() {
   return (
-    <section className="container mx-auto">
-      <div className="flex flex-row justify-between items-center ">
-        <div className="flex flex-col item-start justify-start mr-20">
+    <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-0">
+        <div className="flex flex-col item-start justify-start w-full lg:w-5/12 lg:mr-8 xl:mr-12">
           <img
             src="/assets/icons/ic_logo_product.png"
             alt="Hookah Product"
@@ -21,7 +21,7 @@ export default function CustomShapeProduct() {
           <Button
             variant="secondary"
             size="md"
-            className="w-full rounded-xl border-[1px] border-gray-200"
+            className="w-full sm:w-auto rounded-xl border border-gray-200"
           >
             <div className="flex flex-row items-center justify-center">
               <span className="text-sm sm:text-base md:text-lg text-foreground font-urbanist font-regular mr-2">
@@ -70,8 +70,8 @@ export default function CustomShapeProduct() {
             </div>
           </div>
         </div>
-        <div className="flex-1  border-l border-gray-200 p-20">
-          <div className="flex flex-row gap-5 items-center">
+        <div className="w-full lg:flex-1 lg:border-l border-gray-200 lg:pl-8 xl:pl-12 pt-8 lg:pt-0">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 items-start sm:items-center mb-6">
             <h3 className="text-xl sm:text-2xl md:text-2xl font-semibold text-foreground font-urbanist">
               Variety & Specifications
             </h3>
@@ -80,31 +80,31 @@ export default function CustomShapeProduct() {
               Hexagonal
             </p>
           </div>
-          <div className="mt-6 flex flex-row gap-7.5">
+          <div className="mt-6 flex flex-col sm:flex-row gap-5 sm:gap-7.5">
             <div
               style={{ backgroundImage: "url('/assets/images/hookah-1.png')" }}
-              className="w-110 h-83 bg-cover bg-center bg-no-repeat flex flex-col justify-end items-start p-6"
+              className="w-full sm:w-1/2 h-64 sm:h-72 md:h-80 lg:h-83 bg-cover bg-center bg-no-repeat flex flex-col justify-end items-start p-4 sm:p-6 rounded-lg"
             >
-              <h4 className="text-xl font-semibold text-foreground font-urbanist">
+              <h4 className="text-lg sm:text-xl font-semibold text-foreground font-urbanist">
                 Coconut Charcoal Briquette – Cube 25mm
               </h4>
-              <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
+              <p className="text-xs sm:text-sm md:text-base text-foreground/50 font-urbanist font-regular">
                 Ash Content: &lt;2% | Moisture: &lt;6% | Burning Time: 3+ Hours
               </p>
             </div>
             <div
               style={{ backgroundImage: "url('/assets/images/hookah-2.png')" }}
-              className="w-110 h-83 bg-cover bg-center bg-no-repeat flex flex-col justify-end items-start p-6"
+              className="w-full sm:w-1/2 h-64 sm:h-72 md:h-80 lg:h-83 bg-cover bg-center bg-no-repeat flex flex-col justify-end items-start p-4 sm:p-6 rounded-lg"
             >
-              <h4 className="text-xl font-semibold text-foreground font-urbanist">
+              <h4 className="text-lg sm:text-xl font-semibold text-foreground font-urbanist">
                 Packaging Options
               </h4>
-              <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular max-w-70">
+              <p className="text-xs sm:text-sm md:text-base text-foreground/50 font-urbanist font-regular max-w-70">
                 Kraft & Printed Box 1 kg | 10 kg | Custom Private Label
               </p>
             </div>
           </div>
-          <div className="mt-7.5 flex flex-row gap-5">
+          <div className="mt-6 sm:mt-7.5 flex flex-col sm:flex-row gap-5">
             <div className="border border-gray-200 bg-secondary rounded-xl p-7.5">
               <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
                 Monthly Production Capacity
@@ -113,20 +113,20 @@ export default function CustomShapeProduct() {
                 Up to 200 Tons / Month
               </h4>
             </div>
-            <div className="border border-gray-200 bg-secondary rounded-xl p-7.5 flex-1 flex flex-row gap-5 items-center justify-between">
+            <div className="border border-gray-200 bg-secondary rounded-xl p-5 sm:p-7.5 flex-1 flex flex-col sm:flex-row gap-4 sm:gap-5 items-start sm:items-center justify-between">
               <div>
                 <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
                   {" "}
                   Packaging & Branding
                 </p>
-                <h4 className="text-xl font-semibold text-foreground font-urbanist">
+                <h4 className="text-lg sm:text-xl font-semibold text-foreground font-urbanist">
                   Custom OEM Available
                 </h4>
               </div>
               <Button
                 variant="primary"
                 size="md"
-                className="rounded-xl  flex flex-row gap-4 items-center justify-center"
+                className="rounded-xl flex flex-row gap-2 sm:gap-4 items-center justify-center w-full sm:w-auto"
               >
                 <span className="text-sm sm:text-base text-foreground font-urbanist font-regular">
                   View Example

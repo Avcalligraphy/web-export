@@ -267,6 +267,68 @@
       },
       "submit": "Send Inquiry"
     }
+  },
+  "exportShipping": {
+    "hero": {
+      "title": "Export With Confidence",
+      "description": "We handle every shipment with precision — from factory loading to global delivery — ensuring reliability, safety, and timely arrival."
+    },
+    "shippingMap": {
+      "title": "Shipping Maps",
+      "description": "A meticulous journey of transforming natural coconut shells into high-performance charcoal briquettes trusted by global buyers."
+    },
+    "worldwideShipping": {
+      "title": "Worldwide Shipping, Seamless and Reliable",
+      "description": "From order confirmation to final delivery, every shipment is handled with precision and care. We ensure on-time production, secure packaging, and smooth export from Indonesia's major ports to destinations worldwide.",
+      "steps": {
+        "step1": {
+          "step": "Step 01",
+          "title": "Order Confirmation",
+          "description": "Once your order is confirmed, our team reviews all product details, quantities, and packaging specifications to ensure everything meets export standards."
+        },
+        "step2": {
+          "step": "Step 02",
+          "title": "Production Process",
+          "description": "Manufacturing begins according to your request, with an estimated lead time of 7–14 days to ensure optimal charcoal quality."
+        },
+        "step3": {
+          "step": "Step 03",
+          "title": "Quality Inspection",
+          "description": "Each batch undergoes strict quality control and certification to guarantee durability, moisture content, and shape consistency that meet international standards."
+        },
+        "step4": {
+          "step": "Step 04",
+          "title": "Packaging & Labeling",
+          "description": "Products are packed using eco-friendly materials, with custom branding options available to match your company's identity."
+        },
+        "step5": {
+          "step": "Step 05",
+          "title": "Loading & Documentation",
+          "description": "Goods are carefully loaded into containers at major ports — Surabaya, Semarang, or Belawan — accompanied by complete and accurate export documentation."
+        },
+        "step6": {
+          "step": "Step 06",
+          "title": "Shipment & Delivery",
+          "description": "Sea shipment takes approximately 25–35 days, depending on the destination country. We provide transparent tracking updates until your order safely arrives."
+        }
+      }
+    }
+  },
+  "factoryQuality": {
+    "productionProcess": {
+      "step1": {
+        "title": "Coconut Shell",
+        "description": "Only premium-grade coconut shells are carefully selected from trusted local sources across Indonesia. We ensure the shells are fully matured, clean, and free from impurities to guarantee the best raw material for high-performance charcoal."
+      },
+      "step2": {
+        "title": "Carbonization",
+        "description": "The selected coconut shells are slowly burned in a controlled low-oxygen environment to create pure charcoal. This process maximizes fixed carbon content while minimizing ash, resulting in strong, consistent-quality charcoal suitable for export."
+      },
+      "step3": {
+        "title": "Crushing",
+        "description": "After cooling, the charcoal is crushed into fine powder using industrial grinders. The uniform particle size ensures better binding, longer burning time, and optimal heat distribution in the final briquette."
+      }
+    }
   }
 }
 

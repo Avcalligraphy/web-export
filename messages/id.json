@@ -265,6 +265,68 @@
       },
       "submit": "Kirim Pertanyaan"
     }
+  },
+  "exportShipping": {
+    "hero": {
+      "title": "Ekspor dengan Keyakinan",
+      "description": "Kami menangani setiap pengiriman dengan presisi — dari pemuatan pabrik hingga pengiriman global — memastikan keandalan, keamanan, dan ketepatan waktu."
+    },
+    "shippingMap": {
+      "title": "Peta Pengiriman",
+      "description": "Perjalanan teliti mengubah tempurung kelapa alami menjadi briket arang berkinerja tinggi yang dipercaya oleh pembeli global."
+    },
+    "worldwideShipping": {
+      "title": "Pengiriman Seluruh Dunia, Mulus dan Andal",
+      "description": "Dari konfirmasi pesanan hingga pengiriman akhir, setiap pengiriman ditangani dengan presisi dan perhatian. Kami memastikan produksi tepat waktu, pengemasan yang aman, dan ekspor yang lancar dari pelabuhan utama Indonesia ke tujuan di seluruh dunia.",
+      "steps": {
+        "step1": {
+          "step": "Langkah 01",
+          "title": "Konfirmasi Pesanan",
+          "description": "Setelah pesanan Anda dikonfirmasi, tim kami meninjau semua detail produk, kuantitas, dan spesifikasi pengemasan untuk memastikan semuanya memenuhi standar ekspor."
+        },
+        "step2": {
+          "step": "Langkah 02",
+          "title": "Proses Produksi",
+          "description": "Manufaktur dimulai sesuai permintaan Anda, dengan perkiraan waktu tunggu 7–14 hari untuk memastikan kualitas arang yang optimal."
+        },
+        "step3": {
+          "step": "Langkah 03",
+          "title": "Inspeksi Kualitas",
+          "description": "Setiap batch menjalani kontrol kualitas dan sertifikasi yang ketat untuk menjamin daya tahan, kadar air, dan konsistensi bentuk yang memenuhi standar internasional."
+        },
+        "step4": {
+          "step": "Langkah 04",
+          "title": "Pengemasan & Pelabelan",
+          "description": "Produk dikemas menggunakan bahan ramah lingkungan, dengan opsi branding kustom yang tersedia untuk mencocokkan identitas perusahaan Anda."
+        },
+        "step5": {
+          "step": "Langkah 05",
+          "title": "Pemuatan & Dokumentasi",
+          "description": "Barang dimuat dengan hati-hati ke dalam kontainer di pelabuhan utama — Surabaya, Semarang, atau Belawan — disertai dengan dokumentasi ekspor yang lengkap dan akurat."
+        },
+        "step6": {
+          "step": "Langkah 06",
+          "title": "Pengiriman & Pengiriman",
+          "description": "Pengiriman laut memakan waktu sekitar 25–35 hari, tergantung pada negara tujuan. Kami menyediakan pembaruan pelacakan yang transparan hingga pesanan Anda tiba dengan aman."
+        }
+      }
+    }
+  },
+  "factoryQuality": {
+    "productionProcess": {
+      "step1": {
+        "title": "Tempurung Kelapa",
+        "description": "Hanya tempurung kelapa kelas premium yang dipilih dengan hati-hati dari sumber lokal terpercaya di seluruh Indonesia. Kami memastikan tempurung sudah matang sepenuhnya, bersih, dan bebas dari kotoran untuk menjamin bahan baku terbaik untuk arang berkinerja tinggi."
+      },
+      "step2": {
+        "title": "Karbonisasi",
+        "description": "Tempurung kelapa yang dipilih dibakar perlahan dalam lingkungan rendah oksigen yang terkontrol untuk menciptakan arang murni. Proses ini memaksimalkan kandungan karbon tetap sambil meminimalkan abu, menghasilkan arang berkualitas kuat dan konsisten yang cocok untuk ekspor."
+      },
+      "step3": {
+        "title": "Penghancuran",
+        "description": "Setelah didinginkan, arang dihancurkan menjadi bubuk halus menggunakan penggiling industri. Ukuran partikel yang seragam memastikan pengikatan yang lebih baik, waktu pembakaran yang lebih lama, dan distribusi panas yang optimal dalam briket akhir."
+      }
+    }
   }
 }
 

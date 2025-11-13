@@ -20,7 +20,7 @@ export default function ProductHero() {
         <p className="text-sm sm:text-base md:text-lg text-foreground/50 font-urbanist font-medium max-w-3xl">
         Explore our range of high-quality coconut charcoal briquettes crafted for hookah, BBQ, and custom applications. Made from 100% natural coconut shells, our briquettes deliver long-lasting heat, low ash, and a clean burn — trusted by importers and private brands in 20+ countries worldwide.
         </p>
-        <div className="mt-2 border-10 border-secondary max-w-220 ">
+        <div className="mt-2 lg:mb-0 mb-20 border-10 border-secondary max-w-220 ">
             <div className="border border-gray-200 bg-primary p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 ">
                 <HeroCardProduct image="product-1" title="Hookah / Shisha Briquettes" tag="Hookah" />
                 <HeroCardProduct image="product-2" title="BBQ Charcoal" tag="BBQ" />

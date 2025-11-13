@@ -8,12 +8,15 @@ export function generateStaticParams() {
 
 export default function ProductsPage() {
   return (
-    <main>
+    <main >
       <ProductHero />
-      <HookahProduct />
-      <BBQProduct />
-      <CustomShapeProduct />
+      <div className="space-y-16 md:space-y-24 lg:space-y-32 py-12 md:py-16 lg:py-20">
+        <HookahProduct />
+        <BBQProduct />
+        <CustomShapeProduct />
+      </div>
       <BannerProducct />
+      
     </main>
   );
 }
