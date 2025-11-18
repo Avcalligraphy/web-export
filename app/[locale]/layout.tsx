@@ -101,6 +101,21 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     ...currentMetadata,
     metadataBase: new URL(baseUrl),
+    icons: {
+      icon: [
+        // Prioritaskan ukuran lebih besar dulu untuk kualitas lebih baik
+        { url: '/assets/icons/favicon/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
+        { url: '/assets/icons/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+        { url: '/assets/icons/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+        { url: '/assets/icons/favicon/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+        
+      ],
+      apple: [
+        { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      ],
+      // Gunakan favicon.ico yang berisi multiple sizes untuk kompatibilitas maksimal
+      shortcut: '/favicon.ico',
+    },
     alternates: {
       canonical: `/${locale}`,
       languages: alternates,

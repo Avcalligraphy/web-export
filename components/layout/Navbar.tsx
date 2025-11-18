@@ -61,7 +61,7 @@ export default function Navbar() {
             <img 
               src="/assets/images/logo-2.png" 
               alt="logo" 
-              className="w-24 h-9 sm:w-28 sm:h-10 md:w-32 md:h-12 lg:w-40.5 lg:h-16 object-contain transition-all duration-300" 
+              className="w-26 h-auto sm:w-28 sm:h-auto md:w-32 md:h-auto lg:w-40.5 lg:h-16 object-contain transition-all duration-300" 
             />
           </Link>
 
