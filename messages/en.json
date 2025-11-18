@@ -315,7 +315,14 @@
     }
   },
   "factoryQuality": {
+    "factoryHero": {
+      "title": "Quality That Burns Longer, Tested to Perfection",
+      "description": "We combine advanced production technology and strict quality control to deliver premium coconut charcoal briquettes trusted by global buyers.",
+      "button": "Learn More"
+    },
     "productionProcess": {
+      "title": "The Production Process",
+      "description": "A meticulous journey of transforming natural coconut shells into high-performance charcoal briquettes trusted by global buyers.",
       "step1": {
         "title": "Coconut Shell",
         "description": "Only premium-grade coconut shells are carefully selected from trusted local sources across Indonesia. We ensure the shells are fully matured, clean, and free from impurities to guarantee the best raw material for high-performance charcoal."
@@ -327,6 +334,123 @@
       "step3": {
         "title": "Crushing",
         "description": "After cooling, the charcoal is crushed into fine powder using industrial grinders. The uniform particle size ensures better binding, longer burning time, and optimal heat distribution in the final briquette."
+      },
+      "step4": {
+        "title": "Mixing",
+        "description": "The charcoal powder is blended with natural binders and a precise amount of moisture. This stage determines the consistency and durability of each briquette, maintaining our standard for clean, smoke-free burning."
+      },
+      "step5": {
+        "title": "Pressing",
+        "description": "The blended mixture is compacted using hydraulic presses into various shapes — cube, hexagonal, or finger — depending on product type (Hookah or BBQ). This step defines density, ensuring longer burning and minimal cracking."
+      },
+      "step6": {
+        "title": "Drying",
+        "description": "The freshly pressed briquettes are dried in temperature-controlled ovens to remove residual moisture. Proper drying enhances ignition quality, prevents mold, and stabilizes the briquettes for long-term storage and export."
+      },
+      "step7": {
+        "title": "Packing",
+        "description": "Each batch undergoes final inspection before being packed in moisture-proof packaging. We offer various options — kraft paper, printed boxes, and OEM designs — ensuring your brand stands out in every shipment."
+      }
+    }
+  },
+  "catalogProduct": {
+    "hookah": {
+      "title": "Hookah / Shisha Briquettes",
+      "location": "Tegal, Indonesia",
+      "description": "Our premium coconut charcoal briquettes are crafted specifically for hookah and shisha use. Made from 100% natural coconut shells, they deliver a clean, odorless, and long-lasting burn — perfect for lounges, distributors, and global importers who demand consistent quality and smooth smoking experiences. Each briquette is precisely shaped and tested to ensure stable heat, minimal ash, and no chemical additives, maintaining the pure flavor of your shisha",
+      "burningTime": {
+        "label": "Burning Time",
+        "value": "3+ Hours"
+      },
+      "ashContent": {
+        "label": "Ash Content",
+        "value": "<2% Low Ash"
+      },
+      "moistureLevel": {
+        "label": "Moisture Level",
+        "value": "<6% Moisture"
+      },
+      "keyFeatures": {
+        "title": "Key Features and Amenities",
+        "features": [
+          "Long Burning Time — Up to 3+ hours of consistent heat",
+          "100% Natural Coconut Shells — Eco-friendly and renewable",
+          "Low Ash Content (<2%) — Keeps your hookah bowl clean",
+          "Perfect Shape Consistency — Cube 25mm / 26mm / 27mm options",
+          "Odorless & Tasteless — Preserves original shisha flavor",
+          "Packaging Options — 1kg, 10kg, OEM / Private Label available",
+          "Export Ready — Trusted by importers in 20+ countries"
+        ]
+      },
+      "sendInquiry": {
+        "title": "Send Inquiry",
+        "description": "Tell us what you need — our export team will get back to you within 24 hours with full details, pricing, and shipping options."
+      }
+    },
+    "bbq": {
+      "title": "Eco-Friendly Charcoal for BBQ",
+      "location": "Tegal, Indonesia",
+      "description": "Our premium coconut charcoal briquettes are perfect for BBQ and grilling enthusiasts. Made from 100% natural coconut shells, they provide even heat distribution, long burning time, and minimal ash — ideal for restaurants, catering services, and home grilling. Each briquette is carefully crafted to ensure consistent performance, clean burn, and excellent flavor preservation for your grilled foods.",
+      "burningTime": {
+        "label": "Burning Time",
+        "value": "3+ Hours"
+      },
+      "ashContent": {
+        "label": "Ash Content",
+        "value": "<2% Low Ash"
+      },
+      "moistureLevel": {
+        "label": "Moisture Level",
+        "value": "<6% Moisture"
+      },
+      "keyFeatures": {
+        "title": "Key Features and Amenities",
+        "features": [
+          "Long Burning Time — Up to 3+ hours of consistent heat",
+          "100% Natural Coconut Shells — Eco-friendly and renewable",
+          "Low Ash Content (<2%) — Minimal cleanup required",
+          "Even Heat Distribution — Perfect for grilling",
+          "Odorless & Tasteless — Preserves natural food flavors",
+          "Packaging Options — 5kg, 10kg, OEM / Private Label available",
+          "Export Ready — Trusted by importers in 20+ countries"
+        ]
+      },
+      "sendInquiry": {
+        "title": "Send Inquiry",
+        "description": "Tell us what you need — our export team will get back to you within 24 hours with full details, pricing, and shipping options."
+      }
+    },
+    "oem": {
+      "title": "Custom Charcoal Shapes & Packaging",
+      "location": "Tegal, Indonesia",
+      "description": "Create your own branded charcoal products with our full OEM and private label services. We offer custom shapes, sizes, and packaging solutions tailored to your brand identity. From design consultation to production and packaging, we handle every step to ensure your products meet the highest quality standards and reflect your brand's unique identity.",
+      "burningTime": {
+        "label": "Burning Time",
+        "value": "3+ Hours"
+      },
+      "ashContent": {
+        "label": "Ash Content",
+        "value": "<2% Low Ash"
+      },
+      "moistureLevel": {
+        "label": "Moisture Level",
+        "value": "<6% Moisture"
+      },
+      "keyFeatures": {
+        "title": "Key Features and Amenities",
+        "features": [
+          "Custom Shapes & Sizes — Tailored to your specifications",
+          "100% Natural Coconut Shells — Eco-friendly and renewable",
+          "Private Label Packaging — Kraft & printed box options",
+          "Flexible MOQ — Suitable for various business sizes",
+          "Brand Consultation — Full design and branding support",
+          "Quality Assurance — SGS, ISO, Halal certified",
+          "Export Ready — Trusted by importers in 20+ countries"
+        ]
+      },
+      "sendInquiry": {
+        "title": "Send Inquiry",
+        "description": "Tell us what you need — our export team will get back to you within 24 hours with full details, pricing, and shipping options."
       }
     }
   }

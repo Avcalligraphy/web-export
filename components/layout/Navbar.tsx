@@ -58,9 +58,7 @@ export default function Navbar() {
         <div className="relative flex items-center justify-between h-14 md:h-20">
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center z-10">
-            <span className="text-lg md:text-xl lg:text-2xl font-bold text-foreground font-urbanist">
-              {t('logo')}
-            </span>
+            <img src="/assets/images/logo-2.png" alt="logo" className="w-40.5 h-16" />
           </Link>
 
           {/* Desktop Menu - Centered */}

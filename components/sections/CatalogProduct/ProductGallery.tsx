@@ -2,8 +2,14 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
-export default function ProductGallery() {
+interface ProductGalleryProps {
+  productType: 'hookah' | 'bbq' | 'oem';
+}
+
+export default function ProductGallery({ productType }: ProductGalleryProps) {
+  const t = useTranslations(`catalogProduct.${productType}`);
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 6;
 
@@ -19,13 +25,13 @@ export default function ProductGallery() {
     <section className="container mx-auto mt-10 sm:mt-16 md:mt-20 lg:mt-30">
       <div className="flex flex-col items-start justify-center">
         <div className="flex flex-col sm:flex-row items-center justify-start  gap-3 sm:gap-5 w-full">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground font-urbanist">Hookah / Shisha Briquettes</h1>
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground font-urbanist">{t('title')}</h1>
             <div className="flex items-center justify-center gap-2.5 p-2 sm:p-2.5 border border-gray-200 rounded-lg">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img" className="sm:w-6 sm:h-6">
                 <path fill="#ffff" d="M12 2a6 6 0 0 0-6 6c0 4.667 6 11 6 11s6-6.333 6-11a6 6 0 0 0-6-6zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
                 </svg>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-foreground font-urbanist font-regular ">
-            Tegal, Indonesia
+            {t('location')}
             </p>
             </div>
         </div>

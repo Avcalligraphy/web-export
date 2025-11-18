@@ -1,9 +1,11 @@
 import ContainerProduct from "@/components/ui/HomeComponent/ContainerProduct";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 
 export default function Product() {
   const t = useTranslations('product');
+  const tCommon = useTranslations('common');
+  const locale = useLocale();
   const productItems = [
     t('hookah.title'),
     t('bbq.title'),
@@ -18,9 +20,9 @@ export default function Product() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 mt-4 md:mt-6 lg:mt-8 border-10 border-secondary p-3 md:p-4 items-stretch">
-        <ContainerProduct title={productItems[0]} description={t('hookah.description')} image="product-1" tag={t('hookah.tag')} underline={true} underlineText={t('hookah.moq')} />
-        <ContainerProduct title={productItems[1]} description={t('bbq.description')} image="product-2" tag={t('bbq.tag')} underline={true} underlineText={t('bbq.moq')} />
-        <ContainerProduct title={productItems[2]} description={t('oem.description')} image="product-3" tag={t('oem.tag')} underline={true} underlineText={t('oem.moq')} />
+        <ContainerProduct title={productItems[0]} description={t('hookah.description')} image="product-1" tag={t('hookah.tag')} underline={true} underlineText={t('hookah.moq')} href={`/${locale}/products/hookah`} buttonText={tCommon('requestQuote')} />
+        <ContainerProduct title={productItems[1]} description={t('bbq.description')} image="product-2" tag={t('bbq.tag')} underline={true} underlineText={t('bbq.moq')} href={`/${locale}/products/bbq`} buttonText={tCommon('requestQuote')} />
+        <ContainerProduct title={productItems[2]} description={t('oem.description')} image="product-3" tag={t('oem.tag')} underline={true} underlineText={t('oem.moq')} href={`/${locale}/products/oem`} buttonText={tCommon('requestQuote')} />
       </div>
     </section>
   );

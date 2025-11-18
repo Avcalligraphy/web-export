@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button, Tag } from "..";
 
 interface ContainerProductProps {
@@ -8,10 +9,12 @@ interface ContainerProductProps {
   tag: string;
   underline?: boolean;
   underlineText?: string;
+  href?: string;
+  buttonText?: string;
 }
 
-export default function ContainerProduct({ title, description, image, tag, underline = false, underlineText = "" }: ContainerProductProps) {
-  return (
+export default function ContainerProduct({ title, description, image, tag, underline = false, underlineText = "", href, buttonText = "Request a Quote" }: ContainerProductProps) {
+  const content = (
     <div className="h-full flex flex-col border-1 border-gray-200 rounded-xl p-7.5 bg-secondary">
       <Image src={`/assets/images/${image}.png`} alt={title} width={428} height={250} className="mb-4" />
       <Tag>{tag}</Tag>
@@ -20,8 +23,18 @@ export default function ContainerProduct({ title, description, image, tag, under
       {description} {underline && <span className="text-foreground font-urbanist font-medium underline">{underlineText}</span>}
       </p>
       <Button variant="red" size="md" className="w-[202px] rounded-full mt-6">
-        Request a Quote
+        {buttonText}
       </Button>
     </div>
   );
+
+  if (href) {
+    return (
+      <Link href={href} className="block h-full">
+        {content}
+      </Link>
+    );
+  }
+
+  return content;
 }

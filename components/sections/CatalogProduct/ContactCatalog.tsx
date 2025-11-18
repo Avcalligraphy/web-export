@@ -1,6 +1,15 @@
-import { InquiryCatalog } from "@/components/ui";
+"use client";
 
-export default function ContactCatalog() {
+import { InquiryCatalog } from "@/components/ui";
+import { useTranslations } from "next-intl";
+
+interface ContactCatalogProps {
+  productType: 'hookah' | 'bbq' | 'oem';
+}
+
+export default function ContactCatalog({ productType }: ContactCatalogProps) {
+    const t = useTranslations(`catalogProduct.${productType}`);
+    
     return (
         <section className="container mx-auto mt-10 sm:mt-16 md:mt-20 lg:mt-30">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-20 lg:gap-25">
@@ -11,10 +20,10 @@ export default function ContactCatalog() {
           className="w-auto h-4 sm:h-5 md:h-6 mb-2 sm:mb-3 md:mb-4"
         />
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground font-urbanist mb-2 sm:mb-3 md:mb-3.5">
-        Send Inquiry
+        {t('sendInquiry.title')}
         </h2>
         <p className="text-sm sm:text-base md:text-lg text-foreground/50 font-urbanist font-medium">
-        Tell us what you need — our export team will get back to you within 24 hours with full details, pricing, and shipping options.
+        {t('sendInquiry.description')}
         </p>
       </div>
         

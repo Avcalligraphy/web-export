@@ -11,37 +11,51 @@ export default function ProductionProcess() {
       step: "01",
       title: t("step1.title"),
       description: t("step1.description"),
-      image: "/assets/images/coconut-shell.png",
+      image: "/assets/images/step-1.png",
       position: "left" as const,
     },
     {
       step: "02",
       title: t("step2.title"),
       description: t("step2.description"),
-      image: "/assets/images/coconut-shell.png",
+      image: "/assets/images/step-2.png",
       position: "right" as const,
     },
     {
       step: "03",
       title: t("step3.title"),
       description: t("step3.description"),
-      image: "/assets/images/coconut-shell.png",
+      image: "/assets/images/step-3.png",
       position: "left" as const,
     },
     {
-        step: "04",
-        title: t("step3.title"),
-        description: t("step3.description"),
-        image: "/assets/images/coconut-shell.png",
-        position: "right" as const,
-      },
-      {
-        step: "05",
-        title: t("step3.title"),
-        description: t("step3.description"),
-        image: "/assets/images/coconut-shell.png",
-        position: "left" as const,
-      },
+      step: "04",
+      title: t("step4.title"),
+      description: t("step4.description"),
+      image: "/assets/images/step-4.png",
+      position: "right" as const,
+    },
+    {
+      step: "05",
+      title: t("step5.title"),
+      description: t("step5.description"),
+      image: "/assets/images/step-5.png",
+      position: "left" as const,
+    },
+    {
+      step: "06",
+      title: t("step6.title"),
+      description: t("step6.description"),
+      image: "/assets/images/step-6.png",
+      position: "right" as const,
+    },
+    {
+      step: "07",
+      title: t("step7.title"),
+      description: t("step7.description"),
+      image: "/assets/images/step-7.png",
+      position: "left" as const,
+    },
   ];
 
   return (
@@ -54,13 +68,13 @@ export default function ProductionProcess() {
           className="w-auto h-5 md:h-6 mb-3 md:mb-4"
         />
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground font-urbanist mb-3 md:mb-3.5">
-        The Production Process
+        {t("title")}
         </h2>
         <p className="text-sm sm:text-base md:text-lg text-foreground/50 font-urbanist font-medium">
-        A meticulous journey of transforming natural coconut shells into high-performance charcoal briquettes trusted by global buyers.
+        {t("description")}
         </p>
       </div>
-        <div className="relative w-full w-full mx-auto">
+        <div className="relative w-full mx-auto">
           {/* Vertical Timeline Line - Only on desktop */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-red-600 hidden lg:block"></div>
 

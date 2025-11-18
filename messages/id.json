@@ -313,7 +313,14 @@
     }
   },
   "factoryQuality": {
+    "factoryHero": {
+      "title": "Kualitas yang Membakar Lebih Lama, Diuji hingga Sempurna",
+      "description": "Kami menggabungkan teknologi produksi canggih dan kontrol kualitas ketat untuk menghasilkan briket arang kelapa premium yang dipercaya oleh pembeli global.",
+      "button": "Pelajari Lebih Lanjut"
+    },
     "productionProcess": {
+      "title": "Proses Produksi",
+      "description": "Perjalanan teliti mengubah tempurung kelapa alami menjadi briket arang berkinerja tinggi yang dipercaya oleh pembeli global.",
       "step1": {
         "title": "Tempurung Kelapa",
         "description": "Hanya tempurung kelapa kelas premium yang dipilih dengan hati-hati dari sumber lokal terpercaya di seluruh Indonesia. Kami memastikan tempurung sudah matang sepenuhnya, bersih, dan bebas dari kotoran untuk menjamin bahan baku terbaik untuk arang berkinerja tinggi."
@@ -325,6 +332,123 @@
       "step3": {
         "title": "Penghancuran",
         "description": "Setelah didinginkan, arang dihancurkan menjadi bubuk halus menggunakan penggiling industri. Ukuran partikel yang seragam memastikan pengikatan yang lebih baik, waktu pembakaran yang lebih lama, dan distribusi panas yang optimal dalam briket akhir."
+      },
+      "step4": {
+        "title": "Pencampuran",
+        "description": "Bubuk arang dicampur dengan pengikat alami dan jumlah kelembaban yang tepat. Tahap ini menentukan konsistensi dan daya tahan setiap briket, mempertahankan standar kami untuk pembakaran bersih dan bebas asap."
+      },
+      "step5": {
+        "title": "Pengepresan",
+        "description": "Campuran yang telah dicampur dikompres menggunakan mesin press hidrolik menjadi berbagai bentuk — kubus, heksagonal, atau jari — tergantung pada jenis produk (Hookah atau BBQ). Langkah ini menentukan kepadatan, memastikan pembakaran lebih lama dan retak minimal."
+      },
+      "step6": {
+        "title": "Pengeringan",
+        "description": "Briket yang baru ditekan dikeringkan dalam oven yang dikontrol suhu untuk menghilangkan kelembaban sisa. Pengeringan yang tepat meningkatkan kualitas penyalaan, mencegah jamur, dan menstabilkan briket untuk penyimpanan jangka panjang dan ekspor."
+      },
+      "step7": {
+        "title": "Pengemasan",
+        "description": "Setiap batch menjalani inspeksi akhir sebelum dikemas dalam kemasan tahan kelembaban. Kami menawarkan berbagai opsi — kertas kraft, kotak cetak, dan desain OEM — memastikan merek Anda menonjol dalam setiap pengiriman."
+      }
+    }
+  },
+  "catalogProduct": {
+    "hookah": {
+      "title": "Briket Hookah / Shisha",
+      "location": "Tegal, Indonesia",
+      "description": "Briket arang kelapa premium kami dibuat khusus untuk penggunaan hookah dan shisha. Terbuat dari 100% tempurung kelapa alami, mereka memberikan pembakaran yang bersih, tidak berbau, dan tahan lama — sempurna untuk lounge, distributor, dan importir global yang menuntut kualitas konsisten dan pengalaman merokok yang mulus. Setiap briket dibentuk dengan presisi dan diuji untuk memastikan panas stabil, abu minimal, dan tanpa aditif kimia, mempertahankan rasa murni shisha Anda",
+      "burningTime": {
+        "label": "Waktu Bakar",
+        "value": "3+ Jam"
+      },
+      "ashContent": {
+        "label": "Kandungan Abu",
+        "value": "<2% Abu Rendah"
+      },
+      "moistureLevel": {
+        "label": "Tingkat Kelembaban",
+        "value": "<6% Kelembaban"
+      },
+      "keyFeatures": {
+        "title": "Fitur dan Fasilitas Utama",
+        "features": [
+          "Waktu Bakar Lama — Hingga 3+ jam panas konsisten",
+          "100% Tempurung Kelapa Alami — Ramah lingkungan dan terbarukan",
+          "Kandungan Abu Rendah (<2%) — Menjaga mangkuk hookah Anda bersih",
+          "Konsistensi Bentuk Sempurna — Opsi kubus 25mm / 26mm / 27mm",
+          "Tidak Berbau & Tidak Berasa — Mempertahankan rasa shisha asli",
+          "Opsi Kemasan — 1kg, 10kg, OEM / Private Label tersedia",
+          "Siap Ekspor — Dipercaya oleh importir di 20+ negara"
+        ]
+      },
+      "sendInquiry": {
+        "title": "Kirim Pertanyaan",
+        "description": "Beritahu kami apa yang Anda butuhkan — tim ekspor kami akan menghubungi Anda dalam 24 jam dengan detail lengkap, harga, dan opsi pengiriman."
+      }
+    },
+    "bbq": {
+      "title": "Arang Ramah Lingkungan untuk BBQ",
+      "location": "Tegal, Indonesia",
+      "description": "Briket arang kelapa premium kami sempurna untuk penggemar BBQ dan memanggang. Terbuat dari 100% tempurung kelapa alami, mereka memberikan distribusi panas yang merata, waktu bakar yang lama, dan abu minimal — ideal untuk restoran, layanan katering, dan memanggang di rumah. Setiap briket dibuat dengan hati-hati untuk memastikan kinerja konsisten, pembakaran bersih, dan pelestarian rasa yang sangat baik untuk makanan panggang Anda.",
+      "burningTime": {
+        "label": "Waktu Bakar",
+        "value": "3+ Jam"
+      },
+      "ashContent": {
+        "label": "Kandungan Abu",
+        "value": "<2% Abu Rendah"
+      },
+      "moistureLevel": {
+        "label": "Tingkat Kelembaban",
+        "value": "<6% Kelembaban"
+      },
+      "keyFeatures": {
+        "title": "Fitur dan Fasilitas Utama",
+        "features": [
+          "Waktu Bakar Lama — Hingga 3+ jam panas konsisten",
+          "100% Tempurung Kelapa Alami — Ramah lingkungan dan terbarukan",
+          "Kandungan Abu Rendah (<2%) — Pembersihan minimal diperlukan",
+          "Distribusi Panas Merata — Sempurna untuk memanggang",
+          "Tidak Berbau & Tidak Berasa — Mempertahankan rasa alami makanan",
+          "Opsi Kemasan — 5kg, 10kg, OEM / Private Label tersedia",
+          "Siap Ekspor — Dipercaya oleh importir di 20+ negara"
+        ]
+      },
+      "sendInquiry": {
+        "title": "Kirim Pertanyaan",
+        "description": "Beritahu kami apa yang Anda butuhkan — tim ekspor kami akan menghubungi Anda dalam 24 jam dengan detail lengkap, harga, dan opsi pengiriman."
+      }
+    },
+    "oem": {
+      "title": "Bentuk & Kemasan Arang Kustom",
+      "location": "Tegal, Indonesia",
+      "description": "Buat produk arang bermerek Anda sendiri dengan layanan OEM dan private label lengkap kami. Kami menawarkan bentuk, ukuran, dan solusi kemasan kustom yang disesuaikan dengan identitas merek Anda. Dari konsultasi desain hingga produksi dan pengemasan, kami menangani setiap langkah untuk memastikan produk Anda memenuhi standar kualitas tertinggi dan mencerminkan identitas unik merek Anda.",
+      "burningTime": {
+        "label": "Waktu Bakar",
+        "value": "3+ Jam"
+      },
+      "ashContent": {
+        "label": "Kandungan Abu",
+        "value": "<2% Abu Rendah"
+      },
+      "moistureLevel": {
+        "label": "Tingkat Kelembaban",
+        "value": "<6% Kelembaban"
+      },
+      "keyFeatures": {
+        "title": "Fitur dan Fasilitas Utama",
+        "features": [
+          "Bentuk & Ukuran Kustom — Disesuaikan dengan spesifikasi Anda",
+          "100% Tempurung Kelapa Alami — Ramah lingkungan dan terbarukan",
+          "Kemasan Private Label — Opsi kotak Kraft & cetak",
+          "MOQ Fleksibel — Cocok untuk berbagai ukuran bisnis",
+          "Konsultasi Merek — Dukungan desain dan branding lengkap",
+          "Jaminan Kualitas — Sertifikasi SGS, ISO, Halal",
+          "Siap Ekspor — Dipercaya oleh importir di 20+ negara"
+        ]
+      },
+      "sendInquiry": {
+        "title": "Kirim Pertanyaan",
+        "description": "Beritahu kami apa yang Anda butuhkan — tim ekspor kami akan menghubungi Anda dalam 24 jam dengan detail lengkap, harga, dan opsi pengiriman."
       }
     }
   }
