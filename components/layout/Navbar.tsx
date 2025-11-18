@@ -58,7 +58,11 @@ export default function Navbar() {
         <div className="relative flex items-center justify-between h-14 md:h-20">
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center z-10">
-            <img src="/assets/images/logo-2.png" alt="logo" className="w-40.5 h-16" />
+            <img 
+              src="/assets/images/logo-2.png" 
+              alt="logo" 
+              className="w-24 h-9 sm:w-28 sm:h-10 md:w-32 md:h-12 lg:w-40.5 lg:h-16 object-contain transition-all duration-300" 
+            />
           </Link>
 
           {/* Desktop Menu - Centered */}
