@@ -1,8 +1,8 @@
-
 "use client";
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { motion } from 'framer-motion';
 
 interface ProductGalleryProps {
   productType: 'hookah' | 'bbq' | 'oem';
@@ -21,10 +21,88 @@ export default function ProductGallery({ productType }: ProductGalleryProps) {
     setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
   };
 
+  const headerVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  };
+
+  const thumbnailContainerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.05,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const thumbnailVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 20 
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.4,
+      },
+    },
+  };
+
+  const mainImagesContainerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.2,
+      },
+    },
+  };
+
+  const mainImageVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 20 
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
+  const navVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
-    <section className="container mx-auto mt-10 sm:mt-16 md:mt-20 lg:mt-30">
+    <section className="container mx-auto mt-10 sm:mt-16 md:mt-20 lg:mt-30 overflow-x-hidden">
       <div className="flex flex-col items-start justify-center">
-        <div className="flex flex-col sm:flex-row items-center justify-start  gap-3 sm:gap-5 w-full">
+        <motion.div 
+          className="flex flex-col sm:flex-row items-center justify-start  gap-3 sm:gap-5 w-full"
+          variants={headerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground font-urbanist">{t('title')}</h1>
             <div className="flex items-center justify-center gap-2.5 p-2 sm:p-2.5 border border-gray-200 rounded-lg">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img" className="sm:w-6 sm:h-6">
@@ -34,27 +112,59 @@ export default function ProductGallery({ productType }: ProductGalleryProps) {
             {t('location')}
             </p>
             </div>
-        </div>
+        </motion.div>
         <div className="flex flex-col bg-secondary border border-gray-200 rounded-xl p-4 sm:p-6 md:p-8 lg:p-12.5 w-full mt-6 sm:mt-8 md:mt-12.5">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-9 gap-3 md:gap-5 bg-primary rounded-xl p-5 border border-gray-200">
-                <img src="/assets/images/product-gallery-1.png" alt="product-gallery-1" className="w-full h-full object-cover" />
-                <img src="/assets/images/product-gallery-1.png" alt="product-gallery-1" className="w-full h-full object-cover" />
-                <img src="/assets/images/product-gallery-1.png" alt="product-gallery-1" className="w-full h-full object-cover" />
-                <img src="/assets/images/product-gallery-1.png" alt="product-gallery-1" className="w-full h-full object-cover" />
-                <img src="/assets/images/product-gallery-1.png" alt="product-gallery-1" className="w-full h-full object-cover" />
-                <img src="/assets/images/product-gallery-1.png" alt="product-gallery-1" className="w-full h-full object-cover" />
-                <img src="/assets/images/product-gallery-1.png" alt="product-gallery-1" className="w-full h-full object-cover" />
-                <img src="/assets/images/product-gallery-1.png" alt="product-gallery-1" className="w-full h-full object-cover" />
-                <img src="/assets/images/product-gallery-1.png" alt="product-gallery-1" className="w-full h-full object-cover" />
+            <div className="overflow-hidden">
+              <motion.div 
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-9 gap-3 md:gap-5 bg-primary rounded-xl p-5 border border-gray-200"
+                variants={thumbnailContainerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-100px" }}
+              >
+                  {Array.from({ length: 9 }).map((_, index) => (
+                    <motion.img 
+                      key={index}
+                      src="/assets/images/product-gallery-1.png" 
+                      alt={`product-gallery-${index + 1}`} 
+                      className="w-full h-full object-cover" 
+                      variants={thumbnailVariants}
+                    />
+                  ))}
+              </motion.div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-3 sm:gap-5 w-full mt-5 sm:mt-7.5">
-                <img src="/assets/images/main-product-gallery-1.png" alt="main-product-gallery-1.png" className="w-full h-auto object-cover" />
-                <img src="/assets/images/main-product-gallery-2.png" alt="main-product-gallery-2.png" className="w-full h-auto object-cover" />
+            <div className="overflow-hidden">
+              <motion.div 
+                className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-3 sm:gap-5 w-full mt-5 sm:mt-7.5"
+                variants={mainImagesContainerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-100px" }}
+              >
+                  <motion.img 
+                    src="/assets/images/main-product-gallery-1.png" 
+                    alt="main-product-gallery-1.png" 
+                    className="w-full h-auto object-cover" 
+                    variants={mainImageVariants}
+                  />
+                  <motion.img 
+                    src="/assets/images/main-product-gallery-2.png" 
+                    alt="main-product-gallery-2.png" 
+                    className="w-full h-auto object-cover" 
+                    variants={mainImageVariants}
+                  />
+              </motion.div>
             </div>
             
             {/* Slide Navigation */}
-            <div className="flex items-center justify-center mt-5 sm:mt-7.5">
+            <motion.div 
+              className="flex items-center justify-center mt-5 sm:mt-7.5"
+              variants={navVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+            >
               <div className="flex items-center gap-2 sm:gap-4 bg-primary border border-gray-200 rounded-full p-2 sm:p-2.5">
                 {/* Left Arrow Button */}
                 <button
@@ -112,7 +222,7 @@ export default function ProductGallery({ productType }: ProductGalleryProps) {
                   </svg>
                 </button>
               </div>
-            </div>
+            </motion.div>
         </div>
       </div>
     </section>

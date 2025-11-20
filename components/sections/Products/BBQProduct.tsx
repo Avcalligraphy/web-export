@@ -1,10 +1,66 @@
+"use client";
+
 import Button from "../../ui/Button";
+import { motion } from 'framer-motion';
 
 export default function BBQProduct() {
+  const leftColumnVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  };
+
+  const rightColumnVariants = {
+    hidden: { opacity: 0, x: 50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  };
+
+  const cardsContainerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 30 
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
-    <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="container mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden">
     <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-0">
-      <div className="flex flex-col item-start justify-start w-full lg:w-5/12 lg:mr-8 xl:mr-12">
+      <motion.div 
+        className="flex flex-col item-start justify-start w-full lg:w-5/12 lg:mr-8 xl:mr-12"
+        variants={leftColumnVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+      >
         <img
           src="/assets/icons/ic_logo_product.png"
           alt="Hookah Product"
@@ -69,8 +125,14 @@ export default function BBQProduct() {
 
           </div>
         </div>
-      </div>
-      <div className="w-full lg:flex-1 lg:border-l border-gray-200 lg:pl-8 xl:pl-12 pt-8 lg:pt-0">
+      </motion.div>
+      <motion.div 
+        className="w-full lg:flex-1 lg:border-l border-gray-200 lg:pl-8 xl:pl-12 pt-8 lg:pt-0"
+        variants={rightColumnVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+      >
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 items-start sm:items-center mb-6">
           <h3 className="text-xl sm:text-2xl md:text-2xl font-semibold text-foreground font-urbanist">
             Variety & Specifications
@@ -80,95 +142,121 @@ export default function BBQProduct() {
             Hexagonal
           </p>
         </div>
-        <div className="mt-6 flex flex-col sm:flex-row gap-5 sm:gap-7.5">
-          <div
-            style={{ backgroundImage: "url('/assets/images/hookah-1.png')" }}
-            className="w-full sm:w-1/2 h-64 sm:h-72 md:h-80 lg:h-83 bg-cover bg-center bg-no-repeat flex flex-col justify-end items-start p-4 sm:p-6 rounded-lg"
+        <div className="overflow-hidden">
+          <motion.div 
+            className="mt-6 flex flex-col sm:flex-row gap-5 sm:gap-7.5"
+            variants={cardsContainerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
           >
-            <h4 className="text-lg sm:text-xl font-semibold text-foreground font-urbanist">
-              Coconut Charcoal Briquette – Cube 25mm
-            </h4>
-            <p className="text-xs sm:text-sm md:text-base text-foreground/50 font-urbanist font-regular">
-              Ash Content: &lt;2% | Moisture: &lt;6% | Burning Time: 3+ Hours
-            </p>
-          </div>
-          <div
-            style={{ backgroundImage: "url('/assets/images/hookah-2.png')" }}
-            className="w-full sm:w-1/2 h-64 sm:h-72 md:h-80 lg:h-83 bg-cover bg-center bg-no-repeat flex flex-col justify-end items-start p-4 sm:p-6 rounded-lg"
-          >
-            <h4 className="text-lg sm:text-xl font-semibold text-foreground font-urbanist">
-              Packaging Options
-            </h4>
-            <p className="text-xs sm:text-sm md:text-base text-foreground/50 font-urbanist font-regular max-w-70">
-              Kraft & Printed Box 1 kg | 10 kg | Custom Private Label
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 sm:mt-7.5 flex flex-col sm:flex-row gap-5">
-          <div className="border border-gray-200 bg-secondary rounded-xl p-7.5">
-            <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
-              Monthly Production Capacity
-            </p>
-            <h4 className="text-xl font-semibold text-foreground font-urbanist">
-              Up to 200 Tons / Month
-            </h4>
-          </div>
-          <div className="border border-gray-200 bg-secondary rounded-xl p-5 sm:p-7.5 flex-1 flex flex-col sm:flex-row gap-4 sm:gap-5 items-start sm:items-center justify-between">
-            <div>
-              <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
-                {" "}
-                Packaging & Branding
-              </p>
+            <motion.div
+              variants={cardVariants}
+              style={{ backgroundImage: "url('/assets/images/hookah-1.png')" }}
+              className="w-full sm:w-1/2 h-64 sm:h-72 md:h-80 lg:h-83 bg-cover bg-center bg-no-repeat flex flex-col justify-end items-start p-4 sm:p-6 rounded-lg"
+            >
               <h4 className="text-lg sm:text-xl font-semibold text-foreground font-urbanist">
-                Custom OEM Available
+                Coconut Charcoal Briquette – Cube 25mm
+              </h4>
+              <p className="text-xs sm:text-sm md:text-base text-foreground/50 font-urbanist font-regular">
+                Ash Content: &lt;2% | Moisture: &lt;6% | Burning Time: 3+ Hours
+              </p>
+            </motion.div>
+            <motion.div
+              variants={cardVariants}
+              style={{ backgroundImage: "url('/assets/images/hookah-2.png')" }}
+              className="w-full sm:w-1/2 h-64 sm:h-72 md:h-80 lg:h-83 bg-cover bg-center bg-no-repeat flex flex-col justify-end items-start p-4 sm:p-6 rounded-lg"
+            >
+              <h4 className="text-lg sm:text-xl font-semibold text-foreground font-urbanist">
+                Packaging Options
+              </h4>
+              <p className="text-xs sm:text-sm md:text-base text-foreground/50 font-urbanist font-regular max-w-70">
+                Kraft & Printed Box 1 kg | 10 kg | Custom Private Label
+              </p>
+            </motion.div>
+          </motion.div>
+        </div>
+        <div className="overflow-hidden">
+          <motion.div 
+            className="mt-6 sm:mt-7.5 flex flex-col sm:flex-row gap-5"
+            variants={cardsContainerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            <motion.div variants={cardVariants} className="border border-gray-200 bg-secondary rounded-xl p-7.5">
+              <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
+                Monthly Production Capacity
+              </p>
+              <h4 className="text-xl font-semibold text-foreground font-urbanist">
+                Up to 200 Tons / Month
+              </h4>
+            </motion.div>
+            <motion.div variants={cardVariants} className="border border-gray-200 bg-secondary rounded-xl p-5 sm:p-7.5 flex-1 flex flex-col sm:flex-row gap-4 sm:gap-5 items-start sm:items-center justify-between">
+              <div>
+                <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
+                  {" "}
+                  Packaging & Branding
+                </p>
+                <h4 className="text-lg sm:text-xl font-semibold text-foreground font-urbanist">
+                  Custom OEM Available
+                </h4>
+              </div>
+              <Button
+                variant="primary"
+                size="md"
+                className="rounded-xl flex flex-row gap-2 sm:gap-4 items-center justify-center w-full sm:w-auto"
+              >
+                <span className="text-sm sm:text-base text-foreground font-urbanist font-regular">
+                  View Example
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  role="img"
+                  aria-labelledby="eye1"
+                >
+                  <title id="eye1">Eye</title>
+                  <path
+                    d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"
+                    fill="none"
+                    stroke="#ffff"
+                    strokeWidth="2"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="3"
+                    fill="none"
+                    stroke="#ffff"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Button>
+            </motion.div>
+          </motion.div>
+        </div>
+        <div className="overflow-hidden">
+          <motion.div 
+            className="mt-6"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            <div className="border border-gray-200 bg-secondary rounded-xl p-7.5">
+              <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
+                Quality Certification
+              </p>
+              <h4 className="text-xl font-semibold text-foreground font-urbanist">
+                SGS, ISO, Halal Certified
               </h4>
             </div>
-            <Button
-              variant="primary"
-              size="md"
-              className="rounded-xl flex flex-row gap-2 sm:gap-4 items-center justify-center w-full sm:w-auto"
-            >
-              <span className="text-sm sm:text-base text-foreground font-urbanist font-regular">
-                View Example
-              </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                role="img"
-                aria-labelledby="eye1"
-              >
-                <title id="eye1">Eye</title>
-                <path
-                  d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"
-                  fill="none"
-                  stroke="#ffff"
-                  strokeWidth="2"
-                />
-                <circle
-                  cx="12"
-                  cy="12"
-                  r="3"
-                  fill="none"
-                  stroke="#ffff"
-                  strokeWidth="2"
-                />
-              </svg>
-            </Button>
-          </div>
+          </motion.div>
         </div>
-        <div className="mt-6">
-          <div className="border border-gray-200 bg-secondary rounded-xl p-7.5">
-            <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
-              Quality Certification
-            </p>
-            <h4 className="text-xl font-semibold text-foreground font-urbanist">
-              SGS, ISO, Halal Certified
-            </h4>
-          </div>
-        </div>
-      </div>
+      </motion.div>
     </div>
   </section>
   );

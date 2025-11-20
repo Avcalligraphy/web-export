@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { motion } from 'framer-motion';
 
 export default function ProductionProcess() {
   const t = useTranslations("factoryQuality.productionProcess");
@@ -58,10 +59,68 @@ export default function ProductionProcess() {
     },
   ];
 
+  const headerVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  };
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const getStepVariants = (position: "left" | "right") => ({
+    hidden: { 
+      opacity: 0, 
+      x: position === "left" ? -50 : 50,
+      y: 30
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  });
+
+  const mobileStepVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 30 
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
-    <section className="relative w-full bg-[#0A0A0A] py-12 sm:py-16 md:py-20 lg:py-32">
+    <section className="relative w-full bg-[#0A0A0A] py-12 sm:py-16 md:py-20 lg:py-32 overflow-x-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-0">
-      <div className="mb-12">
+      <motion.div 
+        className="mb-12"
+        variants={headerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+      >
         <img
           src="/assets/icons/ic_stars.png"
           alt="stars"
@@ -73,20 +132,30 @@ export default function ProductionProcess() {
         <p className="text-sm sm:text-base md:text-lg text-foreground/50 font-urbanist font-medium">
         {t("description")}
         </p>
-      </div>
+      </motion.div>
         <div className="relative w-full mx-auto">
           {/* Vertical Timeline Line - Only on desktop */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-red-600 hidden lg:block"></div>
 
           {/* Steps */}
-          <div className="space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20">
+          <motion.div 
+            className="space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
             {steps.map((step, index) => (
-              <div
+              <motion.div
                 key={index}
                 className="relative"
+                variants={getStepVariants(step.position)}
               >
                 {/* Mobile & Tablet Layout (< lg) */}
-                <div className="lg:hidden space-y-4">
+                <motion.div 
+                  className="lg:hidden space-y-4"
+                  variants={mobileStepVariants}
+                >
                   {/* Step Label */}
                   <div className="text-center">
                     <span className="text-white text-3xl sm:text-4xl md:text-5xl font-bold font-urbanist">
@@ -121,7 +190,7 @@ export default function ProductionProcess() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Desktop Layout (>= lg) */}
                 <div className="hidden lg:flex items-center">
@@ -179,9 +248,9 @@ export default function ProductionProcess() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
