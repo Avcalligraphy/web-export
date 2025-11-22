@@ -2,8 +2,10 @@
 
 import { HeroCardProduct } from "@/components/ui";
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export default function ProductHero() {
+  const t = useTranslations('productsPage.productHero');
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -69,10 +71,10 @@ export default function ProductHero() {
             className="w-auto h-5 md:h-6 mb-3 md:mb-4"
           />
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground font-urbanist mb-3 md:mb-3.5">
-          Our Products
+          {t('title')}
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-foreground/50 font-urbanist font-medium max-w-3xl">
-          Explore our range of high-quality coconut charcoal briquettes crafted for hookah, BBQ, and custom applications. Made from 100% natural coconut shells, our briquettes deliver long-lasting heat, low ash, and a clean burn — trusted by importers and private brands in 20+ countries worldwide.
+          {t('description')}
           </p>
         </motion.div>
         <div className="mt-2 lg:mb-0 mb-20 border-10 border-secondary max-w-220 overflow-hidden">
@@ -81,13 +83,13 @@ export default function ProductHero() {
             variants={cardsContainerVariants}
           >
             <motion.div variants={cardVariants}>
-              <HeroCardProduct image="product-1" title="Hookah / Shisha Briquettes" tag="Hookah" />
+              <HeroCardProduct image="product-1" title={t('cards.hookah.title')} tag={t('cards.hookah.tag')} />
             </motion.div>
             <motion.div variants={cardVariants}>
-              <HeroCardProduct image="product-2" title="BBQ Charcoal" tag="BBQ" />
+              <HeroCardProduct image="product-2" title={t('cards.bbq.title')} tag={t('cards.bbq.tag')} />
             </motion.div>
             <motion.div variants={cardVariants}>
-              <HeroCardProduct image="product-3" title="Custom Charcoal Shapes & Packaging" tag="OEM / Private Label" />
+              <HeroCardProduct image="product-3" title={t('cards.custom.title')} tag={t('cards.custom.tag')} />
             </motion.div>
           </motion.div>
         </div>

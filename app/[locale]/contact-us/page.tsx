@@ -147,7 +147,7 @@ export default function ContactUsPage() {
     <main>
         <HeroContact />
         <SendInquiry />
-        <GlobalPresence />
+        {/* <GlobalPresence /> */}
         <ExploreBriquette />
         <BannerExplore />
     </main>

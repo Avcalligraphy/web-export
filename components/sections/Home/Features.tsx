@@ -9,12 +9,28 @@ export default function Features() {
   const t = useTranslations('features');
 
   const featureItems = [
-    t('items.natural'),
-    t('items.burningTime'),
-    t('items.lowAsh'),
-    t('items.certified'),
-    t('items.oem'),
+    {
+      title: t('items.natural'),
+      icon: '/assets/icons/ic_natural.png'
+    },
+    {
+      title: t('items.burningTime'),
+      icon: '/assets/icons/ic_time.png'
+    },
+    {
+      title: t('items.lowAsh'),
+      icon: '/assets/icons/ic_clean.png'
+    },
+    { 
+      title: t('items.certified'),
+      icon: '/assets/icons/ic_shield.png'
+    },
+    {
+      title: t('items.oem'),
+      icon: '/assets/icons/ic_box.png'
+    }
   ];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -82,7 +98,7 @@ export default function Features() {
               variants={itemVariants}
               className="overflow-hidden"
             >
-              <FeaturesContainer title={title} />
+              <FeaturesContainer title={title.title} icon={title.icon} />
             </motion.div>
           ))}
         </motion.div>

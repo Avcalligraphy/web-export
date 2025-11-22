@@ -8,6 +8,7 @@ interface ButtonProps {
   className?: string;
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
+  disabled?: boolean;
 }
 
 export default function Button({
@@ -17,14 +18,15 @@ export default function Button({
   className,
   onClick,
   type = "button",
+  disabled = false,
 }: ButtonProps) {
   const baseStyles = "font-semibold rounded-lg transition-all duration-200";
   
   const variants = {
-    primary: "bg-primary text-foreground hover:opacity-90 border-[1px] border-gray-100",
-    secondary: "bg-secondary text-foreground hover:opacity-9 border-[1px] border-gray-100",
+    primary: "bg-primary text-foreground border-[1px] border-gray-100 hover:text-foreground/50",
+    secondary: "bg-secondary text-foreground border-[1px] border-gray-100 hover:text-foreground/50",
     outline: "border-2 border-foreground text-foreground hover:bg-foreground hover:text-primary",
-    red: "bg-red-100 text-foreground hover:opacity-90 font-urbanist",
+    red: "bg-red-100 text-foreground font-urbanist",
   };
   
   const sizes = {
@@ -37,7 +39,14 @@ export default function Button({
     <button
       type={type}
       onClick={onClick}
-      className={cn(baseStyles, variants[variant], sizes[size], className)}
+      disabled={disabled}
+      className={cn(
+        baseStyles, 
+        variants[variant], 
+        sizes[size], 
+        disabled && "opacity-50 cursor-not-allowed",
+        className
+      )}
     >
       {children}
     </button>

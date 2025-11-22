@@ -24,7 +24,7 @@ export default function ContainerClientSays({ stars, name, title, description, i
         </p>
 
         <div className="flex items-center gap-3 mt-10">
-            <img src={image} alt={name} className="w-15 h-15" />
+            <img src={image} alt={name} className="w-15 h-15 rounded-full" />
             <div className="flex flex-col">
                 <h4 className="text-lg
                  font-medium text-foreground font-urbanist">{name}</h4>

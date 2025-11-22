@@ -70,19 +70,19 @@ export default function Certificates() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={cardVariants}>
-            <ContainerCertificates icon="/assets/icons/certif.png" title="SGS" description="Visitors can access a wide range of resources, including ebooks, whitepapers, reports." />
+            <ContainerCertificates icon="/assets/icons/ic_shield-2.png" title="SGS" description="International quality inspection report ensuring our product meets global standards" />
           </motion.div>
           <motion.div variants={cardVariants}>
-            <ContainerCertificates icon="/assets/icons/certif.png" title="Halal" description="Visitors can access a wide range of resources, including ebooks, whitepapers, reports." />
+            <ContainerCertificates icon="/assets/icons/ic_halal.png" title="Halal" description="Certified Halal for safe and compliant consumption and handling across Muslim markets." />
           </motion.div>
           <motion.div variants={cardVariants}>
-            <ContainerCertificates icon="/assets/icons/certif.png" title="MSDS" description="Visitors can access a wide range of resources, including ebooks, whitepapers, reports." />
+            <ContainerCertificates icon="/assets/icons/ic_msds.png" title="MSDS" description="Detailed safety and handling information for safe transport and usage." />
           </motion.div>
           <motion.div variants={cardVariants}>
-            <ContainerCertificates icon="/assets/icons/certif.png" title="ISO" description="Visitors can access a wide range of resources, including ebooks, whitepapers, reports." />
+            <ContainerCertificates icon="/assets/icons/ic_iso.png" title="ISO" description="Internationally recognized manufacturing and quality management certification" />
           </motion.div>
           <motion.div variants={cardVariants}>
-            <ContainerCertificates icon="/assets/icons/certif.png" title="COA" description="Visitors can access a wide range of resources, including ebooks, whitepapers, reports." />
+            <ContainerCertificates icon="/assets/icons/ic_coa.png" title="COA" description="Laboratory test report verifying product specifications, quality, and performance" />
           </motion.div>
         </motion.div>
       </div>

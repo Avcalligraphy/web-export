@@ -71,13 +71,13 @@ export default function ClientSays() {
         viewport={{ once: true, margin: "-100px" }}
       >
         <motion.div variants={cardVariants}>
-          <ContainerClientSays stars={5} name={t('client1.name')} title={t('client1.title')} description={t('client1.description')} image="/assets/images/client-says-1.png" country={t('client1.country')} />
+          <ContainerClientSays stars={5} name={t('client1.name')} title={t('client1.title')} description={t('client1.description')} image="/assets/images/client-1.png" country={t('client1.country')} />
         </motion.div>
         <motion.div variants={cardVariants}>
-          <ContainerClientSays stars={5} name={t('client2.name')} title={t('client2.title')} description={t('client2.description')} image="/assets/images/client-says-1.png" country={t('client2.country')} />
+          <ContainerClientSays stars={5} name={t('client2.name')} title={t('client2.title')} description={t('client2.description')} image="/assets/images/client-2.png" country={t('client2.country')} />
         </motion.div>
         <motion.div variants={cardVariants}>
-          <ContainerClientSays stars={5} name={t('client3.name')} title={t('client3.title')} description={t('client3.description')} image="/assets/images/client-says-1.png" country={t('client3.country')} />
+          <ContainerClientSays stars={5} name={t('client3.name')} title={t('client3.title')} description={t('client3.description')} image="/assets/images/client-3.png" country={t('client3.country')} />
         </motion.div>
       </motion.div>
     </section>

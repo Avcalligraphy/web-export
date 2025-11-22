@@ -61,12 +61,12 @@ export default function Navbar() {
             <img 
               src="/assets/images/logo-2.png" 
               alt="logo" 
-              className="w-26 h-auto sm:w-28 sm:h-auto md:w-32 md:h-auto lg:w-40.5 lg:h-16 object-contain transition-all duration-300" 
+              className="w-26 h-auto sm:w-28 sm:h-auto md:w-32 md:h-auto lg:w-40.5 lg:h-16 object-contain transition-all duration-300 " 
             />
           </Link>
 
           {/* Desktop Menu - Centered */}
-          <div className="hidden lg:flex items-center justify-center absolute left-1/2 -translate-x-1/2 z-10">
+          <div className="hidden lg:flex items-center justify-center absolute xl:left-1/2 -translate-x-1/2 z-10 left-[45%]">
             <div className="flex items-center space-x-1 px-4 lg:px-[25px] py-2 lg:py-3 bg-primary rounded-[100px] border-2 border-gray-100">
               {menuItems.map((item) => {
                 const active = isActive(item.path, item.href);
@@ -129,6 +129,9 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="lg:hidden pb-4 border-t border-foreground/10 mt-2 pt-4">
+             <div className="py-3 space-y-3">
+             <LanguageSwitcher />
+            </div>
             {menuItems.map((item) => {
               const active = isActive(item.path, item.href);
               return (
@@ -148,14 +151,20 @@ export default function Navbar() {
                 </Link>
               );
             })}
-            <div className="px-4 py-3 space-y-3">
-              <div className="sm:hidden">
-                <LanguageSwitcher />
-              </div>
-              <Button variant="primary" size="md" className="w-full sm:hidden rounded-[20px]">
-                {t('contactUs')}
-              </Button>
-            </div>
+             <Link
+                  href={`/${locale}/contact-us`}
+                  onClick={() => setIsOpen(false)}
+                  className={cn(
+                    "block px-4 py-3 text-base font-medium rounded-lg transition-all duration-200 mb-1",
+                    "font-urbanist",
+                    isActive(`/contact-us`, `/${locale}/contact-us`)
+                      ? "text-foreground bg-secondary border border-gray-200"
+                      : "text-foreground/80 hover:text-foreground hover:bg-primary/20"
+                  )}
+                >
+                  {t('contactUs')}
+                </Link>
+           
           </div>
         )}
       </div>

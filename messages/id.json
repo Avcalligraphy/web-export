@@ -8,7 +8,7 @@
     "home": "Beranda",
     "about": "Tentang",
     "products": "Produk",
-    "factorQuality": "Pabrik & Kualitas",
+    "factorQuality": "Fabrikasi",
     "exportShipping": "Ekspor & Pengiriman"
   },
   "hero": {
@@ -239,7 +239,8 @@
         "europe": "Eropa",
         "americas": "Amerika",
         "africa": "Afrika",
-        "oceania": "Oseania"
+        "oceania": "Oseania",
+        "others": "Lainnya"
       },
       "products": {
         "coconutCharcoal": "Arang Kelapa",
@@ -247,8 +248,8 @@
         "hookahCharcoal": "Arang Hookah"
       },
       "quantities": {
-        "1-10": "1-10 ton",
-        "11-50": "11-50 ton",
+        "1-10": "18 ton",
+        "11-50": "18-50 ton",
         "51-100": "51-100 ton",
         "100+": "100+ ton"
       },
@@ -263,7 +264,10 @@
         "termsOfUse": "Syarat Penggunaan",
         "privacyPolicy": "Kebijakan Privasi"
       },
-      "submit": "Kirim Pertanyaan"
+      "submit": "Kirim Pertanyaan",
+      "submitting": "Mengirim...",
+      "submitSuccess": "Terima kasih! Pertanyaan Anda telah berhasil dikirim. Kami akan menghubungi Anda dalam 24 jam.",
+      "submitError": "Gagal mengirim pertanyaan. Silakan coba lagi."
     }
   },
   "exportShipping": {
@@ -450,6 +454,91 @@
         "title": "Kirim Pertanyaan",
         "description": "Beritahu kami apa yang Anda butuhkan — tim ekspor kami akan menghubungi Anda dalam 24 jam dengan detail lengkap, harga, dan opsi pengiriman."
       }
+    }
+  },
+  "productsPage": {
+    "productHero": {
+      "title": "Produk Kami",
+      "description": "Jelajahi rangkaian briket arang kelapa berkualitas tinggi kami yang dibuat khusus untuk hookah, BBQ, dan aplikasi kustom. Terbuat dari 100% tempurung kelapa alami, briket kami memberikan panas tahan lama, abu rendah, dan pembakaran bersih — dipercaya oleh importir dan merek private di 20+ negara di seluruh dunia.",
+      "cards": {
+        "hookah": {
+          "title": "Briket Hookah / Shisha",
+          "tag": "Hookah"
+        },
+        "bbq": {
+          "title": "Arang BBQ",
+          "tag": "BBQ"
+        },
+        "custom": {
+          "title": "Bentuk & Kemasan Arang Kustom",
+          "tag": "OEM / Private Label"
+        }
+      }
+    },
+    "bannerProduct": {
+      "title": "Mari Bangun Merek Anda untuk Pasar Global",
+      "description": "Berkolaborasi dengan kami untuk membuat kemasan kustom dan briket private label yang disesuaikan dengan permintaan pasar negara Anda. Dari desain hingga pengiriman, kami memastikan kualitas premium dan layanan ekspor yang andal.",
+      "button": "Kirim Pertanyaan"
+    },
+    "hookahProduct": {
+      "title": "Hookah Briquettes",
+      "description": "Nikmati briket arang kelapa premium yang dirancang khusus untuk penggunaan hookah dan shisha — panas konsisten, waktu bakar lama, dan kandungan abu rendah.",
+      "exportedTo": "Diekspor Ke",
+      "countries": "15+ Negara",
+      "varietySpecs": "Variasi & Spesifikasi",
+      "varietyDescription": "Sempurna untuk sesi hookah: Cube 25mm | Finger | Bentuk Hexagonal untuk distribusi panas optimal",
+      "card1Title": "Hookah Charcoal Briquette – Cube 25mm",
+      "card1Specs": "Kandungan Abu: <2% | Kelembaban: <6% | Waktu Bakar: 3+ Jam | Ideal untuk Shisha",
+      "card2Title": "Opsi Kemasan",
+      "card2Description": "Kraft & Kotak Cetak 1 kg | 10 kg | Private Label Kustom",
+      "productionCapacity": "Kapasitas Produksi Bulanan",
+      "capacityValue": "Hingga 150 Ton / Bulan",
+      "packagingBranding": "Kemasan & Branding",
+      "packagingValue": "Kemasan Khusus Hookah",
+      "qualityCert": "Sertifikasi Kualitas",
+      "certValue": "SGS, ISO, Halal Bersertifikat untuk Penggunaan Hookah",
+      "requestQuote": "Minta Penawaran",
+      "viewExample": "Lihat Contoh"
+    },
+    "bbqProduct": {
+      "title": "BBQ Coconut Charcoal",
+      "description": "Nikmati briket arang kelapa premium yang dirancang khusus untuk BBQ dan grilling — output panas tinggi, waktu bakar lama, dan abu minimal untuk hasil grilling yang sempurna.",
+      "exportedTo": "Diekspor Ke",
+      "countries": "30+ Negara",
+      "varietySpecs": "Variasi & Spesifikasi",
+      "varietyDescription": "Ideal untuk grilling outdoor: Cube 25mm | Finger | Hexagonal | Blok besar untuk sesi BBQ yang diperpanjang",
+      "card1Title": "BBQ Charcoal Briquette – Cube 25mm",
+      "card1Specs": "Kandungan Abu: <2% | Kelembaban: <6% | Waktu Bakar: 4+ Jam | Output Panas Tinggi",
+      "card2Title": "Opsi Kemasan",
+      "card2Description": "Kraft & Kotak Cetak 1 kg | 10 kg | Private Label Kustom",
+      "productionCapacity": "Kapasitas Produksi Bulanan",
+      "capacityValue": "Hingga 300 Ton / Bulan",
+      "packagingBranding": "Kemasan & Branding",
+      "packagingValue": "Solusi Kemasan Siap BBQ",
+      "qualityCert": "Sertifikasi Kualitas",
+      "certValue": "SGS, ISO, Halal Bersertifikat untuk Food Grade",
+      "requestQuote": "Minta Penawaran",
+      "viewExample": "Lihat Contoh"
+    },
+    "customShapeProduct": {
+      "title": "Custom Charcoal Shapes & Packaging",
+      "description": "Buat produk arang unik Anda dengan bentuk, ukuran, dan solusi kemasan kustom. Kami menawarkan manufaktur fleksibel untuk memenuhi kebutuhan branding dan desain spesifik Anda.",
+      "globalReach": "Jangkauan Global",
+      "reachValue": "Pesanan Kustom Seluruh Dunia",
+      "varietySpecs": "Variasi & Spesifikasi",
+      "varietyDescription": "Kustomisasi desain Anda: Bentuk apa pun | Ukuran apa pun | Branding apa pun | Disesuaikan dengan spesifikasi Anda",
+      "card1Title": "Custom Shape Charcoal Briquettes",
+      "card1Description": "Desain bentuk Anda sendiri | Dimensi kustom | Kemasan bermerek | Jumlah pesanan minimum berlaku",
+      "card2Title": "Solusi Kemasan Kustom",
+      "card2Description": "Desain kotak kustom | Pencetakan private label | Ukuran fleksibel | Opsi kemasan bermerek",
+      "productionFlexibility": "Fleksibilitas Produksi",
+      "flexibilityValue": "Pesanan Kustom dari 10 Ton",
+      "packagingBranding": "Kemasan & Branding",
+      "packagingValue": "Layanan Desain Kustom Penuh",
+      "qualityCert": "Sertifikasi Kualitas",
+      "certValue": "SGS, ISO, Halal Bersertifikat (Standar Kustom)",
+      "requestQuote": "Minta Penawaran",
+      "viewExample": "Lihat Contoh"
     }
   }
 }

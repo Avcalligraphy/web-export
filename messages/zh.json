@@ -8,7 +8,7 @@
     "home": "首页",
     "about": "关于我们",
     "products": "产品",
-    "factorQuality": "工厂与质量",
+    "factorQuality": "制造",
     "exportShipping": "出口运输"
   },
   "hero": {
@@ -239,7 +239,8 @@
         "europe": "欧洲",
         "americas": "美洲",
         "africa": "非洲",
-        "oceania": "大洋洲"
+        "oceania": "大洋洲",
+        "others": "其他"
       },
       "products": {
         "coconutCharcoal": "椰壳炭",
@@ -247,8 +248,8 @@
         "hookahCharcoal": "水烟炭"
       },
       "quantities": {
-        "1-10": "1-10 吨",
-        "11-50": "11-50 吨",
+        "1-10": "18 吨",
+        "11-50": "18-50 吨",
         "51-100": "51-100 吨",
         "100+": "100+ 吨"
       },
@@ -263,7 +264,10 @@
         "termsOfUse": "使用条款",
         "privacyPolicy": "隐私政策"
       },
-      "submit": "发送询价"
+      "submit": "发送询价",
+      "submitting": "发送中...",
+      "submitSuccess": "谢谢！您的询价已成功发送。我们将在24小时内与您联系。",
+      "submitError": "发送询价失败。请重试。"
     }
   },
   "exportShipping": {
@@ -450,6 +454,91 @@
         "title": "发送询价",
         "description": "告诉我们您的需求 — 我们的出口团队将在 24 小时内回复您，提供完整的详细信息、价格和运输选项。"
       }
+    }
+  },
+  "productsPage": {
+    "productHero": {
+      "title": "我们的产品",
+      "description": "探索我们为水烟、烧烤和定制应用精心制作的高质量椰壳炭砖系列。由 100% 天然椰壳制成，我们的炭砖提供持久的热量、低灰分和清洁燃烧 — 受到全球 20+ 国家进口商和私人品牌的信赖。",
+      "cards": {
+        "hookah": {
+          "title": "水烟 / 什沙炭砖",
+          "tag": "水烟"
+        },
+        "bbq": {
+          "title": "烧烤炭",
+          "tag": "烧烤"
+        },
+        "custom": {
+          "title": "定制炭形状和包装",
+          "tag": "OEM / 私人标签"
+        }
+      }
+    },
+    "bannerProduct": {
+      "title": "让我们为全球市场打造您的品牌",
+      "description": "与我们合作，创建适合您国家市场需求的定制包装和私人标签炭砖。从设计到运输，我们确保优质质量和可靠的出口服务。",
+      "button": "发送询价"
+    },
+    "hookahProduct": {
+      "title": "水烟炭砖",
+      "description": "体验专为水烟和什沙使用而设计的优质椰壳炭砖 — 热量一致、燃烧时间长、灰分含量低。",
+      "exportedTo": "出口至",
+      "countries": "15+ 国家",
+      "varietySpecs": "品种和规格",
+      "varietyDescription": "完美适合水烟会话：25毫米立方体 | 手指形 | 六边形形状，实现最佳热量分布",
+      "card1Title": "水烟炭砖 – 25毫米立方体",
+      "card1Specs": "灰分含量：<2% | 水分：<6% | 燃烧时间：3+ 小时 | 适合什沙",
+      "card2Title": "包装选项",
+      "card2Description": "牛皮纸和印刷盒 1 公斤 | 10 公斤 | 定制私人标签",
+      "productionCapacity": "月生产能力",
+      "capacityValue": "高达 150 吨/月",
+      "packagingBranding": "包装和品牌",
+      "packagingValue": "水烟专用包装",
+      "qualityCert": "质量认证",
+      "certValue": "SGS、ISO、清真认证，适用于水烟使用",
+      "requestQuote": "请求报价",
+      "viewExample": "查看示例"
+    },
+    "bbqProduct": {
+      "title": "烧烤椰壳炭",
+      "description": "体验专为烧烤和烤制而设计的优质椰壳炭砖 — 高热量输出、燃烧时间长、灰分最少，实现完美的烧烤效果。",
+      "exportedTo": "出口至",
+      "countries": "30+ 国家",
+      "varietySpecs": "品种和规格",
+      "varietyDescription": "适合户外烧烤：25毫米立方体 | 手指形 | 六边形 | 大块，适合延长烧烤会话",
+      "card1Title": "烧烤炭砖 – 25毫米立方体",
+      "card1Specs": "灰分含量：<2% | 水分：<6% | 燃烧时间：4+ 小时 | 高热量输出",
+      "card2Title": "包装选项",
+      "card2Description": "牛皮纸和印刷盒 1 公斤 | 10 公斤 | 定制私人标签",
+      "productionCapacity": "月生产能力",
+      "capacityValue": "高达 300 吨/月",
+      "packagingBranding": "包装和品牌",
+      "packagingValue": "即用型烧烤包装解决方案",
+      "qualityCert": "质量认证",
+      "certValue": "SGS、ISO、清真认证，食品级",
+      "requestQuote": "请求报价",
+      "viewExample": "查看示例"
+    },
+    "customShapeProduct": {
+      "title": "定制炭形状和包装",
+      "description": "创建具有定制形状、尺寸和包装解决方案的独特炭产品。我们提供灵活的制造服务，以满足您的特定品牌和设计要求。",
+      "globalReach": "全球覆盖",
+      "reachValue": "全球定制订单",
+      "varietySpecs": "品种和规格",
+      "varietyDescription": "定制您的设计：任何形状 | 任何尺寸 | 任何品牌 | 根据您的规格定制",
+      "card1Title": "定制形状炭砖",
+      "card1Description": "设计您自己的形状 | 定制尺寸 | 品牌包装 | 适用最低订购量",
+      "card2Title": "定制包装解决方案",
+      "card2Description": "定制盒设计 | 私人标签印刷 | 灵活尺寸 | 品牌包装选项",
+      "productionFlexibility": "生产灵活性",
+      "flexibilityValue": "从 10 吨起的定制订单",
+      "packagingBranding": "包装和品牌",
+      "packagingValue": "完整定制设计服务",
+      "qualityCert": "质量认证",
+      "certValue": "SGS、ISO、清真认证（定制标准）",
+      "requestQuote": "请求报价",
+      "viewExample": "查看示例"
     }
   }
 }

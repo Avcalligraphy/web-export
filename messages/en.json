@@ -10,7 +10,7 @@
     "home": "Home",
     "about": "About",
     "products": "Products",
-    "factorQuality": "Factory & Quality",
+    "factorQuality": "Fabrication",
     "exportShipping": "Export Shipping"
   },
   "hero": {
@@ -241,7 +241,8 @@
         "europe": "Europe",
         "americas": "Americas",
         "africa": "Africa",
-        "oceania": "Oceania"
+        "oceania": "Oceania",
+        "others": "Others"
       },
       "products": {
         "coconutCharcoal": "Coconut Charcoal",
@@ -249,8 +250,8 @@
         "hookahCharcoal": "Hookah Charcoal"
       },
       "quantities": {
-        "1-10": "1-10 tons",
-        "11-50": "11-50 tons",
+        "1-10": "18 tons",
+        "11-50": "18-50 tons",
         "51-100": "51-100 tons",
         "100+": "100+ tons"
       },
@@ -265,7 +266,10 @@
         "termsOfUse": "Terms of Use",
         "privacyPolicy": "Privacy Policy"
       },
-      "submit": "Send Inquiry"
+      "submit": "Send Inquiry",
+      "submitting": "Sending...",
+      "submitSuccess": "Thank you! Your inquiry has been sent successfully. We will contact you within 24 hours.",
+      "submitError": "Failed to send inquiry. Please try again."
     }
   },
   "exportShipping": {
@@ -452,6 +456,91 @@
         "title": "Send Inquiry",
         "description": "Tell us what you need — our export team will get back to you within 24 hours with full details, pricing, and shipping options."
       }
+    }
+  },
+  "productsPage": {
+    "productHero": {
+      "title": "Our Products",
+      "description": "Explore our range of high-quality coconut charcoal briquettes crafted for hookah, BBQ, and custom applications. Made from 100% natural coconut shells, our briquettes deliver long-lasting heat, low ash, and a clean burn — trusted by importers and private brands in 20+ countries worldwide.",
+      "cards": {
+        "hookah": {
+          "title": "Hookah / Shisha Briquettes",
+          "tag": "Hookah"
+        },
+        "bbq": {
+          "title": "BBQ Charcoal",
+          "tag": "BBQ"
+        },
+        "custom": {
+          "title": "Custom Charcoal Shapes & Packaging",
+          "tag": "OEM / Private Label"
+        }
+      }
+    },
+    "bannerProduct": {
+      "title": "Let's Build Your Brand for the Global Market",
+      "description": "Partner with us to create custom packaging and private label briquettes tailored to your country's market demand. From design to shipment, we ensure premium quality and reliable export service.",
+      "button": "Send Us Inquiry"
+    },
+    "hookahProduct": {
+      "title": "Hookah Briquettes",
+      "description": "Experience premium-quality coconut charcoal briquettes designed specifically for hookah and shisha use — consistent heat, long burning time, and low ash content.",
+      "exportedTo": "Exported To",
+      "countries": "15+ Countries",
+      "varietySpecs": "Variety & Specifications",
+      "varietyDescription": "Perfect for hookah sessions: Cube 25mm | Finger | Hexagonal shapes for optimal heat distribution",
+      "card1Title": "Hookah Charcoal Briquette – Cube 25mm",
+      "card1Specs": "Ash Content: <2% | Moisture: <6% | Burning Time: 3+ Hours | Ideal for Shisha",
+      "card2Title": "Packaging Options",
+      "card2Description": "Kraft & Printed Box 1 kg | 10 kg | Custom Private Label",
+      "productionCapacity": "Monthly Production Capacity",
+      "capacityValue": "Up to 150 Tons / Month",
+      "packagingBranding": "Packaging & Branding",
+      "packagingValue": "Hookah-Specific Packaging",
+      "qualityCert": "Quality Certification",
+      "certValue": "SGS, ISO, Halal Certified for Hookah Use",
+      "requestQuote": "Request a Quote",
+      "viewExample": "View Example"
+    },
+    "bbqProduct": {
+      "title": "BBQ Coconut Charcoal",
+      "description": "Experience premium-quality coconut charcoal briquettes designed specifically for BBQ and grilling — high heat output, long burning time, and minimal ash for perfect grilling results.",
+      "exportedTo": "Exported To",
+      "countries": "30+ Countries",
+      "varietySpecs": "Variety & Specifications",
+      "varietyDescription": "Ideal for outdoor grilling: Cube 25mm | Finger | Hexagonal | Large blocks for extended BBQ sessions",
+      "card1Title": "BBQ Charcoal Briquette – Cube 25mm",
+      "card1Specs": "Ash Content: <2% | Moisture: <6% | Burning Time: 4+ Hours | High Heat Output",
+      "card2Title": "Packaging Options",
+      "card2Description": "Kraft & Printed Box 1 kg | 10 kg | Custom Private Label",
+      "productionCapacity": "Monthly Production Capacity",
+      "capacityValue": "Up to 300 Tons / Month",
+      "packagingBranding": "Packaging & Branding",
+      "packagingValue": "BBQ-Ready Packaging Solutions",
+      "qualityCert": "Quality Certification",
+      "certValue": "SGS, ISO, Halal Certified for Food Grade",
+      "requestQuote": "Request a Quote",
+      "viewExample": "View Example"
+    },
+    "customShapeProduct": {
+      "title": "Custom Charcoal Shapes & Packaging",
+      "description": "Create your unique charcoal products with custom shapes, sizes, and packaging solutions. We offer flexible manufacturing to meet your specific branding and design requirements.",
+      "globalReach": "Global Reach",
+      "reachValue": "Worldwide Custom Orders",
+      "varietySpecs": "Variety & Specifications",
+      "varietyDescription": "Customize your design: Any shape | Any size | Any branding | Tailored to your specifications",
+      "card1Title": "Custom Shape Charcoal Briquettes",
+      "card1Description": "Design your own shape | Custom dimensions | Branded packaging | Minimum order quantities apply",
+      "card2Title": "Custom Packaging Solutions",
+      "card2Description": "Custom box design | Private label printing | Flexible sizes | Branded packaging options",
+      "productionFlexibility": "Production Flexibility",
+      "flexibilityValue": "Custom Orders from 10 Tons",
+      "packagingBranding": "Packaging & Branding",
+      "packagingValue": "Full Custom Design Service",
+      "qualityCert": "Quality Certification",
+      "certValue": "SGS, ISO, Halal Certified (Custom Standards)",
+      "requestQuote": "Request a Quote",
+      "viewExample": "View Example"
     }
   }
 }

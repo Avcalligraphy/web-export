@@ -3,10 +3,14 @@
 import Button from "../../ui/Button";
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import Link from "next/link";
+import { useLocale } from "next-intl";
 
 export default function Hero() {
   const t = useTranslations('hero');
-  const tCommon = useTranslations('common');
+  const tCommon = useTranslations('common'
+  );
+  const locale = useLocale();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -82,9 +86,11 @@ export default function Hero() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
+            <Link href={`/${locale}/contact-us`}>
             <Button variant="red" size="md" className="w-full sm:w-auto sm:flex-1 rounded-[100px] text-sm md:text-base">
               {tCommon('getQuote')}
             </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </motion.div>

@@ -2,8 +2,12 @@
 
 import Button from "../../ui/Button";
 import { motion } from 'framer-motion';
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function BBQProduct() {
+  const locale = useLocale();
+  const t = useTranslations('productsPage.bbqProduct');
   const leftColumnVariants = {
     hidden: { opacity: 0, x: -50 },
     visible: {
@@ -63,25 +67,24 @@ export default function BBQProduct() {
       >
         <img
           src="/assets/icons/ic_logo_product.png"
-          alt="Hookah Product"
+          alt="BBQ Product"
           className="w-20 h-20"
         />
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground font-urbanist mt-12.5">
-        Hookah Briquettes
+        {t('title')}
         </h2>
         <p className="text-sm sm:text-base md:text-lg text-foreground/50 font-urbanist font-regular mt-2 md:mt-3.5 mb-12.5">
-          Experience premium-quality coconut charcoal briquettes designed
-          specifically for hookah and shisha use — consistent heat, long
-          burning time, and low ash content.
+          {t('description')}
         </p>
+        <Link href={`/${locale}/contact-us`}>
         <Button
           variant="secondary"
           size="md"
-          className="w-full sm:w-auto rounded-xl border border-gray-200"
+          className="w-full sm:w-auto rounded-xl border border-gray-200 hover:text-foreground"
         >
           <div className="flex flex-row items-center justify-center">
             <span className="text-sm sm:text-base md:text-lg text-foreground font-urbanist font-regular mr-2">
-              Request a Quote
+              {t('requestQuote')}
             </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -110,14 +113,16 @@ export default function BBQProduct() {
             </svg>
           </div>
         </Button>
+        
+        </Link>
         <div className="mt-6">
           <div className="border border-gray-200 bg-secondary rounded-xl p-7.5 flex flex-row items-center justify-between">
             <div>
             <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
-            Exported To
+            {t('exportedTo')}
             </p>
             <h4 className="text-xl font-semibold text-foreground font-urbanist">
-            20+ Countries 
+            {t('countries')}
             </h4>
             </div>
 
@@ -135,11 +140,10 @@ export default function BBQProduct() {
       >
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 items-start sm:items-center mb-6">
           <h3 className="text-xl sm:text-2xl md:text-2xl font-semibold text-foreground font-urbanist">
-            Variety & Specifications
+            {t('varietySpecs')}
           </h3>
           <p className="text-sm sm:text-base md:text-lg text-foreground/50 font-urbanist font-regular">
-            Available in multiple sizes and shapes: Cube 25mm | Finger |
-            Hexagonal
+            {t('varietyDescription')}
           </p>
         </div>
         <div className="overflow-hidden">
@@ -156,10 +160,10 @@ export default function BBQProduct() {
               className="w-full sm:w-1/2 h-64 sm:h-72 md:h-80 lg:h-83 bg-cover bg-center bg-no-repeat flex flex-col justify-end items-start p-4 sm:p-6 rounded-lg"
             >
               <h4 className="text-lg sm:text-xl font-semibold text-foreground font-urbanist">
-                Coconut Charcoal Briquette – Cube 25mm
+                {t('card1Title')}
               </h4>
               <p className="text-xs sm:text-sm md:text-base text-foreground/50 font-urbanist font-regular">
-                Ash Content: &lt;2% | Moisture: &lt;6% | Burning Time: 3+ Hours
+                {t('card1Specs')}
               </p>
             </motion.div>
             <motion.div
@@ -168,10 +172,10 @@ export default function BBQProduct() {
               className="w-full sm:w-1/2 h-64 sm:h-72 md:h-80 lg:h-83 bg-cover bg-center bg-no-repeat flex flex-col justify-end items-start p-4 sm:p-6 rounded-lg"
             >
               <h4 className="text-lg sm:text-xl font-semibold text-foreground font-urbanist">
-                Packaging Options
+                {t('card2Title')}
               </h4>
               <p className="text-xs sm:text-sm md:text-base text-foreground/50 font-urbanist font-regular max-w-70">
-                Kraft & Printed Box 1 kg | 10 kg | Custom Private Label
+                {t('card2Description')}
               </p>
             </motion.div>
           </motion.div>
@@ -186,20 +190,20 @@ export default function BBQProduct() {
           >
             <motion.div variants={cardVariants} className="border border-gray-200 bg-secondary rounded-xl p-7.5">
               <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
-                Monthly Production Capacity
+                {t('productionCapacity')}
               </p>
               <h4 className="text-xl font-semibold text-foreground font-urbanist">
-                Up to 200 Tons / Month
+                {t('capacityValue')}
               </h4>
             </motion.div>
             <motion.div variants={cardVariants} className="border border-gray-200 bg-secondary rounded-xl p-5 sm:p-7.5 flex-1 flex flex-col sm:flex-row gap-4 sm:gap-5 items-start sm:items-center justify-between">
               <div>
                 <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
                   {" "}
-                  Packaging & Branding
+                  {t('packagingBranding')}
                 </p>
                 <h4 className="text-lg sm:text-xl font-semibold text-foreground font-urbanist">
-                  Custom OEM Available
+                  {t('packagingValue')}
                 </h4>
               </div>
               <Button
@@ -208,7 +212,7 @@ export default function BBQProduct() {
                 className="rounded-xl flex flex-row gap-2 sm:gap-4 items-center justify-center w-full sm:w-auto"
               >
                 <span className="text-sm sm:text-base text-foreground font-urbanist font-regular">
-                  View Example
+                  {t('viewExample')}
                 </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -248,10 +252,10 @@ export default function BBQProduct() {
           >
             <div className="border border-gray-200 bg-secondary rounded-xl p-7.5">
               <p className="text-sm sm:text-base text-foreground/50 font-urbanist font-regular">
-                Quality Certification
+                {t('qualityCert')}
               </p>
               <h4 className="text-xl font-semibold text-foreground font-urbanist">
-                SGS, ISO, Halal Certified
+                {t('certValue')}
               </h4>
             </div>
           </motion.div>

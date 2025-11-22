@@ -46,7 +46,7 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-4.5 py-3.5 rounded-2xl text-base font-urbanist font-regular transition-all duration-200 bg-primary text-foreground border border-gray-200 hover:bg-secondary/20"
+        className="flex items-center gap-2 px-4.5 py-3.5 w-full rounded-2xl text-base font-urbanist font-regular transition-all duration-200 bg-primary text-foreground border border-gray-200 hover:bg-secondary/20"
         aria-label="Select language"
         aria-expanded={isOpen}
       >
@@ -62,7 +62,7 @@ export default function LanguageSwitcher() {
       </button>
 
       {isOpen && (
-        <div className={`absolute top-full mt-2 w-32 bg-primary border border-gray-200 rounded-lg shadow-lg overflow-hidden z-50 ${isRTL ? 'left-0' : 'right-0'}`}>
+        <div className={`absolute top-full mt-2 w-full bg-primary border border-gray-200 rounded-lg shadow-lg overflow-hidden z-50 ${isRTL ? 'left-0' : 'right-0'}`}>
           {otherLocales.map((loc) => (
             <Link
               key={loc}
