@@ -94,7 +94,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       siteName: "Premium Coconut Charcoal Export",
       images: [
         {
-          url: `${baseUrl}/assets/images/bg-hero.png`,
+          url: `${baseUrl}/assets/images/bg-hero-product.png`,
           width: 1200,
           height: 630,
           alt: locale === 'id' 
@@ -112,7 +112,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: "summary_large_image",
       title: currentMetadata.title as string,
       description: currentMetadata.description || undefined,
-      images: [`${baseUrl}/assets/images/bg-hero.png`],
+      images: [`${baseUrl}/assets/images/bg-hero-product.png`],
     },
     alternates: {
       canonical: `${baseUrl}/${locale}/products`,

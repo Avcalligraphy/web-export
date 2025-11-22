@@ -80,6 +80,29 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         locale: "zh_CN",
       },
     },
+    ar: {
+      title: "قوالب فحم جوز الهند الفاخرة للشيشة والشواء — مُصدرة إلى جميع أنحاء العالم",
+      description: "مصنع ومصدر رائد لقوالب فحم جوز الهند الفاخرة للشيشة والشواء. منتجاتنا مُصدرة إلى جميع أنحاء العالم مع شهادات SGS و Halal و ISO و MSDS و COA. وقت احتراق طويل (3+ ساعات)، محتوى رماد منخفض (<2%)، 100% قشور جوز الهند الطبيعية. OEM / علامة خاصة متاحة.",
+      keywords: [
+        "قوالب فحم جوز الهند",
+        "فحم الشيشة",
+        "فحم الشيشة",
+        "فحم الشواء",
+        "تصدير فحم جوز الهند",
+        "مصنع فحم فاخر",
+        "فحم معتمد SGS",
+        "فحم معتمد حلال",
+        "فحم معتمد ISO",
+        "تصدير فحم إندونيسيا",
+        "فحم OEM",
+        "فحم بعلامة خاصة",
+        "فحم احتراق طويل",
+        "فحم رماد منخفض"
+      ],
+      openGraph: {
+        locale: "ar_SA",
+      },
+    },
   };
 
   const currentMetadata = metadataMap[locale] || metadataMap.en;
@@ -102,6 +125,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             ? "Briket Arang Kelapa Premium untuk Hookah & BBQ - Ekspor ke Seluruh Dunia"
             : locale === 'zh'
             ? "优质椰壳炭砖用于水烟和烧烤 - 全球出口"
+            : locale === 'ar'
+            ? "قوالب فحم جوز الهند الفاخرة للشيشة والشواء - تصدير إلى جميع أنحاء العالم"
             : "Premium Coconut Charcoal Briquettes for Hookah & BBQ - Export Worldwide",
         },
         {
@@ -112,6 +137,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             ? "Briket Arang Hookah Shisha"
             : locale === 'zh'
             ? "水烟什沙椰壳炭砖"
+            : locale === 'ar'
+            ? "قوالب فحم الشيشة والشيشة"
             : "Hookah Shisha Coconut Charcoal Briquettes",
         },
       ],
